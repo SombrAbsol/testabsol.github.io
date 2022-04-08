@@ -29,8 +29,8 @@ Je dois la création, ou devrais-je dire refonte, de ce site grâce à [Pk11](ht
 Si vous souhaitez me retrouver ailleurs, voici mes autres réseaux où vous pouvez me contacter :
 
 ## Contact et réseaux
-- Discord: @SombrAbsol#2289 <small>// Actif sur [Poképédia](https://discord.com/invite/W5Hggsc) et [Pokémon Trash](https://discord.com/invite/K6fPaHd), présent aussi sur [DS⁽ⁱ⁾ Mode Hacking!](https://discord.gg/yD3spjv) et [Universal-Server](https://discord.gg/KDJCfGF) ; je refuse, à bon entendeur, les demandes d'ami venant de personnes que je ne connais pas</small>
-- GitHub: [SombrAbsol](https://github.com/SombrAbsol) <small>// Là où vous pouvez retrouver tous mes projets en matière de programmation, dont [ce site Web](https://github.com/SombrAbsol/SombrAbsol.github.io)</small>
-- Crowdin: [SombrAbsol](https://crowdin.com/profile/SombrAbsol) <small>// Me permet de collaborer aux traductions d'homebrews et de sites</small>
-- Poképédia : [SombrAbsol](https://www.pokepedia.fr/Utilisateur:SombrAbsol) <small> // Une encyclopédie collaborative sur Pokémon, comme Wikipédia
-- Adresse e-mail: [darkabsolpkmn@gmail.com](mailto:darkabsolpkmn@gmail.com) <small>// Si jamais vous avez besoin de m'envoyer un e-mail</small>
+- Discord : @SombrAbsol#2289 <small>Actif sur [Poképédia](https://discord.com/invite/W5Hggsc) et [Pokémon Trash](https://discord.com/invite/K6fPaHd), présent aussi sur [DS⁽ⁱ⁾ Mode Hacking!](https://discord.gg/yD3spjv) et [Universal-Server](https://discord.gg/KDJCfGF) ; je refuse, à bon entendeur, les demandes d'ami venant de personnes que je ne connais pas</small>
+- GitHub : [SombrAbsol](https://github.com/SombrAbsol) <small>Là où vous pouvez retrouver tous mes projets en matière de programmation, dont [ce site Web](https://github.com/SombrAbsol/SombrAbsol.github.io)</small>
+- Crowdin : [SombrAbsol](https://crowdin.com/profile/SombrAbsol) <small>Me permet de collaborer aux traductions d'homebrews et de sites</small>
+- Poképédia : [SombrAbsol](https://www.pokepedia.fr/Utilisateur:SombrAbsol) <small> Une encyclopédie collaborative sur Pokémon, comme Wikipédia
+- Adresse e-mail : [darkabsolpkmn@gmail.com](mailto:darkabsolpkmn@gmail.com) <small>Si jamais vous avez besoin de m'envoyer un e-mail</small>
