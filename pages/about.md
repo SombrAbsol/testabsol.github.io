@@ -4,7 +4,7 @@ description: Informations variées, comme mes réseaux
 permalink: /about
 ---
 
-## À propos
+# À propos
 Hein ? Comment ça, vous voulez plus d'infos ?
 
 Bon, on reprend depuis le début.<br>
