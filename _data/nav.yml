@@ -5,20 +5,7 @@
   key: a
 - title: Outils
   items:
+    - title: Mario Kart
+      url: https://testabsol.github.io/mariokart
     - title: Pokémon Donjon Mystère
       url: https://testabsol.github.io/pokemonmysterydungeon
-    - title: Universal-DB
-      url: https://db.universal-team.net
-    - title: TWiLight Menu++
-      url: https://github.com/DS-Homebrew/TWiLightMenu
-    - title: DS-Homebrew wiki
-      url: https://wiki.ds-homebrew.com
-    - title: Universal-Updater
-      url: https://github.com/Universal-Team/Universal-Updater
-    - title: GodMode9i
-      url: https://github.com/DS-Homebrew/GodMode9i
-    - title: nftr-editor
-      url: /nftr-editor
-      key: n
-    - title: dsi-camera
-      url: https://db.universal-team.net/ds/dsi-camera
