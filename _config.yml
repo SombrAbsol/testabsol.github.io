@@ -1,6 +1,6 @@
-title        : "pk11.us"
-description  : "Pk11's site"
-repo         : "Epicpkmn11/pk11.us"
+title        : "SombrAbsol.github.io"
+description  : "Site Web de SombrAbsol"
+repo         : "SombrAbsol/sombrabsol.github.io"
 color        : "#f2acae"
 markdown_ext : "markdown,mkdown,mkdn,mkd,md,html"
 include      : [".well-known"]
@@ -8,7 +8,7 @@ include      : [".well-known"]
 defaults:
   - values:
       layout: "default"
-      title: "Pk11"
+      title: "SombrAbsol"
 
 plugins:
   - "jekyll-github-metadata"
