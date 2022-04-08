@@ -4,5 +4,3 @@ description: Ceci est un test
 permalink: /wondermail
 ---
 Ici Jean-Pierre
-
-{% include_relative PDM1/wondermail.html %}
