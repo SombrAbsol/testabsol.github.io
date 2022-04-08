@@ -1,6 +1,6 @@
 ---
 title: Générateur de Lettres Miracle (PDM1)
-description: Générateur français de Lettres Miracle pour Pokémon Donjon Mystère : Équipe de Secours Rouge et Bleue
+description: Générateur français de Lettres Miracle pour Pokémon Donjon Mystère Équipe de Secours Rouge et Bleue
 permalink: /pokemonmysterydungeon/1/wondermail
 ---
 
