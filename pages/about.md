@@ -8,7 +8,7 @@ permalink: /about
 Hein ? Comment ça, vous voulez plus d'infos ?
 
 Bon, on reprend depuis le début.<br>
-Je suis SombrAbsol, anciennement Pikapikamew pour le pseudo, et Benjamin pour le prénom. Je suis un gars qui adore les jeux vidéo, en particulier Pokémon, Sonic, et les Mario sur DS (Super Mario 64 DS à jamais dans mon coœur).
+Je suis SombrAbsol, anciennement Pikapikamew pour le pseudo, et Benjamin pour le prénom. Je suis un gars qui adore les jeux vidéo, en particulier Pokémon, Sonic, et les Mario sur DS (<i>Super Mario 64 DS</i> à jamais dans mon coœur).
 
 J'aime aussi la programmation ; je touche surtout à du Scratch, Python et HTML. Le hacking sur 3DS et les linkers sont également mon domaine.
 
