@@ -5,4 +5,4 @@ permalink: /wondermail
 ---
 Ici Jean-Pierre
 
-{% include PDM1/wondermail.html %}
+{% include_relative PDM1/wondermail.html %}
