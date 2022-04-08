@@ -1,29 +1,20 @@
 ---
-title: Home
-description: Pk11's website
+title: Accueil
+description: Site Web de SombrAbsol
 permalink: /
 ---
 
-# {{ site.title }}
+# Bievenue !
 
 > {:#splash}
-Why don't you have JS? :'(
+Hé, oh ! Pensez à avoir JavaScript !
 
-Hi .o/<br>
-I'm Pk11, I mainly make DS(i) homebrew apps, related websites, and sometimes a bit of 3DS homebrew. I'm also part of [Universal-Team](https://universal-team.net), we make some DS and 3DS homebrew apps so check those out if you want.
+Allô ? Ici SombrAbsol à l'appareil !<br> Peu importe comment vous avez trouvé mon site, je vous souhaite la bienvenue !
 
-I'm not really sure what else to put here... So check out my about page for more info about me, or the project links below for things I've made or helped with.
+Qui suis-je ? Eh bien, je suis Benjamin (pour les intimes), rédacteur pour le site Pokémon Trash. Je suis également traducteur français pour certains homebrews (TWiLight Menu++, Universal-Updater…), ainsi que de sites Web en lien avec le hacking DS/DSi/3DS.
 
-## Projects:
-These are the main things that I've contributed to, ordered vaguely by how big they are and how much of them is my work:
+Ce site me permet d'y mettre deux-trois bricoles que je me suis amusé à traduire. C'est ce que j'appelle les « outils » de jeux vidéo.
 
-[pkmn-chest](https://github.com/Universal-Team/pkmn-chest){:.btn .btn-primary .button .mb-1}
-[Universal-DB](https://db.universal-team.net){:.btn .btn-primary .button .mb-1}
-[TWiLight Menu++](https://github.com/DS-Homebrew/TWiLightMenu){:.btn .btn-primary .button .mb-1}
-[DS-Homebrew wiki](https://wiki.ds-homebrew.com){:.btn .btn-primary .button .mb-1}
-[Universal-Updater](https://github.com/Universal-Team/Universal-Updater){:.btn .btn-primary .button .mb-1}
-[GodMode9i](https://github.com/DS-Homebrew/GodMode9i){:.btn .btn-primary .button .mb-1}
-[nftr-editor](nftr-editor){:.btn .btn-primary .button .mb-1}
-[dsi-camera](https://db.universal-team.net/ds/dsi-camera){:.btn .btn-primary .button .mb-1}
+N'hésitez pas à y jeter un œil, ça fait toujours plaisir ! 😄
 
 <script src="/assets/js/splashes.js"></script>
