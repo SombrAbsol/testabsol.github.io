@@ -1,62 +1,36 @@
 ---
-title: About
-description: Various social links and such
+title: À propos
+description: Informations variées, comme mes réseaux sociaux
 permalink: /about
 ---
 
-## About
-Hi! I'm <ruby>Evie<rp> (</rp><rt>/ˈɛv.i/</rt><rp>) </rp></ruby>, aka Pk11 or Epicpkmn11 on some older accounts. I'm a trans girl who likes likes programming, particularly DS(i) homebrew, and am trying to learn Japanese, haven't taken like proper classes on it or anything but decided one day to set all my computers to Japanese and just hoped I could figure it out lol. For programming I mostly code in C++ since that's a language you can use for DS(i) homebrew, but I also know some Python, JavaScript, and a bit of Java.
+## À propos
+Hein ? Comment ça, vous voulez plus d'infos ?
 
-I don't like talking about myself much so that's all for this, here's some of my main online profiles:
+Bon, on reprend depuis le début.<br>
+Je suis SombrAbsol, anciennement Pikapikamew pour le pseudo, et Benjamin pour le prénom. Je suis un gars qui adore les jeux vidéo, en particulier Pokémon, Sonic, et les Mario sur DS (Super Mario 64 DS >>> le reste).
 
-## Social links
-### Main <small>// Sites I use frequently</small>
-- GitHub: [Epicpkmn11](https://github.com/Epicpkmn11) <small>// This is where you can find all my coding projects. Including [this website](https://github.com/Epicpkmn11/pk11.us)!</small>
-- Discord: @Pk11#3666 <small>// I'm active in [DS⁽ⁱ⁾ Mode Hacking](https://discord.gg/yD3spjv) and [Universal-Server](https://discord.gg/KDJCfGF) (I don't accept friend requests from people I don't know fyi)</small>
-- GBAtemp: [Pk11](https://gbatemp.net/members/pk11.494739/) <small>// I'm mostly only active in the NDS forums, I also write [blog entries](https://gbatemp.net/blog/pk11.494739/) here sometimes</small>
-- Crowdin: [Pk11](https://crowdin.com/profile/Pk11) <small>// Universal-Team and DS-Homebrew translations are all on my account</small>
-- E-Mail: [epicpkmn11@outlook.com](mailto:epicpkmn11@outlook.com) <small>// Not a website, but I do read my email frequently, if not send many</small>
+J'aime aussi la programmation ; je touche surtout à du Scratch, Python et HTML. Le hacking sur 3DS et les linkers sont également mon domaine.
 
-### Other <small>// Sites I use less often</small>
-- YouTube: [Pk11](https://www.youtube.com/channel/UCPiAz_lYN3LqjCWJ5M4Xt7A) <small>// I watch a lot of YouTube, but don't post much</small>
-- Thingiverse: [Pk11](https://www.thingiverse.com/Pk11) <small>// I put any 3D models I make for printing on here</small>
-- Niconico: [エヴィー](https://www.nicovideo.jp/user/69199725) <small>// I've made an UTAU cover here, if I make anything else in UTAU or VOCALOID I'll put it here too</small>
-- Reddit: [Evie_11](https://www.reddit.com/user/Evie_11/) <small>// Sometimes I check some NDS modding subreddits</small>
-- GitLab: [Pk11](https://gitlab.com/Epicpkmn11) <small>// I helped out a bit with the Yamamura Discord bot and it was on here</small>
+Je joue aussi du synthétiseur ! En fait, je suis un fervent admirateur des OST des jeux Sonic, en particulier les premiers. Sérieusement, le thème de la Zone IceCap (dans <i>Sonic The Hedgehog 3</i>) est la meilleure musique du monde.
 
-If you're curious, I started switching to Pk11 somewhere around early to mid 2019 since I didn't like being called 'epic' for short, I've retroactively changed as many things as I could to Pk11, but its often unavailable since its short and thus commonly taken and sometimes even too short to use outright, in which case I'll usually still fall back to Epicpkmn11 or sometimes add an underscore.
+Je suis enfin rédacteur chez [Pokémon Trash](https://www.pokemontrash.com) depuis le 5 février 2022, et traducteur français pour de multiples homebrews et sites en avec le hacking, dont :
+* [TWiLight Menu++](https://github.com/DS-Homebrew/TWiLightMenu)
+* [nds-bootstrap](https://github.com/DS-Homebrew/nds-bootstrap)
+* [pkmn-chest](https://github.com/Universal-Team/pkmn-chest) (il n'y a pas encore eu de mise à jour avec mes traductions)
+* [GodMode9i](https://github.com/DS-Homebrew/GodMode9i)
+* [Universal-Updater](https://github.com/Universal-Team/Universal-Updater)
+* Le [wiki DS-Homebrew](https://wiki.ds-homebrew.com/fr-FR/)
+* Le [site de skins de DS-Homebrew](https://skins.ds-homebrew.com)
+* La [Universal-Database](https://db.universal-team.net)
 
-## Profile pics
-I've kept every revision I've made to my profile pics over the years and Dropbox even has the last edit dates, though the times for any of these before near 2020 may actually not be quite when I started using them (especially the first one, I feel like that's gotta be more like 2012) but definitely feel about right for when I was using them for most.
+Je dois la création, ou devrais-je dire refonte, de ce site grâce à [Pk11](https://github.com/Epicpkmn11). Elle m'a aimablement donné son accord pour reprendre le code de [son propre site](https://pk11.us).
 
-- 2014-05-04 - Epicpkmn11 1.png <small>// I made this for my YouTube way back when I was trying to make Minecraft videos</small>
+Si vous souhaitez me retrouver ailleurs, voici mes autres réseaux où vous pouvez me contacter :
 
-  ![Epicpkmn11 (1)](/assets/images/pfp/epicpkmn11-1.png)
-
-- 2016-12-19 - Epicpkmn11 2.png <small>// Similar base concept, but I added some *cool lines* and Poké Balls since I was getting back into Pokémon, also changed the font and made the text kinda angled *cause angles are cool* lol</small>
-
-  ![Epicpkmn11 (2)](/assets/images/pfp/epicpkmn11-2.png)
-
-- 2018-07-20 - Epicpkmn11 3.png <small>// *Brace yourself, radical change time*... Wait no, just blurred it a bit. I feel like this date is way off since iirc I made this very shortly after and this is what I was using for years, maybe I'm wrong though</small>
-
-  ![Epicpkmn11 (3)](/assets/images/pfp/epicpkmn11-3.png)
-
-- 2019-01-16 - Pk11 1.png <small>// Wait January? I thought it was later in 2019, guess it was January or I can time travel though, this is still one I sometimes use, though not as much recently (Yes, it is named 1 and no there isn't a second)</small>
-
-  ![Pk11 (1)](/assets/images/pfp/pk11-1.png)
-
-- 2019-11-15 - Evie 1.png <small>// I started feeling that my old ones were a bit too impersonal, so I drew myself as a cat girl! ;P I wouldn't say I *dislike* this drawing necessarily, but I do *much* prefer the style of my next one.</small>
-  <br><small>// (These were drawn in Colors! for the Nintendo DS, as opposed to to my old ones all being from Paint.NET, I also finally know the exact dates since I uploaded them to Colors! Live. You can click these for full size since they were exported at max size)</small>
-
-  [![Evie (1)](/assets/images/pfp/evie-1.png){:.img-small}](/assets/images/pfp/evie-1.png)
-
-- 2020-02-13 - Evie 2.png <small>// As of writing this I'd say that I legitimately like this picture, my last one just kinda felt a bit *off*. Not *bad*, just not quite right, it was my first real attempt to draw well... anything in like at least 5 years though. This one I think does a pretty good job capturing the feel I was going for. Maybe I'll come back in another 3 months with something better, but for now I quite like it ^_^</small>
-
-  [![Evie (2)](/assets/images/pfp/evie-2.png){:.img-small}](/assets/images/pfp/evie-2.png)
-
-## ~~*Fan art*~~
-Apparently I'm popular enough to get fan art now ;P ~~more like just art of me, but fan art sounds more fun lol~~
-
-- By: [Code807](https://twitter.com/code_807) (2020-05-05)
-
-  [![Evie (By Code807)](/assets/images/art/evie-code807.png){:.img-small}](/assets/images/art/evie-code807.png)
+## Contact et réseaux
+- Discord: @SombrAbsol#2289 <small>// Actif sur [Poképédia](https://discord.com/invite/W5Hggsc) et [Pokémon Trash](https://discord.com/invite/K6fPaHd), présent aussi sur [DS⁽ⁱ⁾ Mode Hacking!](https://discord.gg/yD3spjv) et [Universal-Server](https://discord.gg/KDJCfGF) ; je refuse, à bon entendeur, les demandes d'ami venant de personnes que je ne connais pas</small>
+- GitHub: [SombrAbsol](https://github.com/SombrAbsol) <small>// Là où vous pouvez retrouver tous mes projets en matière de programmation, dont [ce site Web](https://github.com/SombrAbsol/SombrAbsol.github.io)</small>
+- Crowdin: [SombrAbsol](https://crowdin.com/profile/SombrAbsol) <small>// Me permet de collaborer aux traductions d'homebrews et de sites</small>
+- Poképédia : [SombrAbsol](https://www.pokepedia.fr/Utilisateur:SombrAbsol) <small> // Une encyclopédie collaborative sur Pokémon, comme Wikipédia
+- Adresse e-mail: [darkabsolpkmn@gmail.com](mailto:darkabsolpkmn@gmail.com) <small>// Si jamais vous avez besoin de m'envoyer un e-mail</small>
