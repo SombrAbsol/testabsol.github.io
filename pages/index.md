@@ -16,5 +16,3 @@ Qui suis-je ? Eh bien, je suis rédacteur pour le site Pokémon Trash. Je suis �
 Ce site (le mien, là, juste ici, maintenant) me permet d'y mettre deux-trois bricoles que je me suis amusé à traduire. C'est ce que j'appelle les « outils » de jeux vidéo.
 
 N'hésitez pas à y jeter un œil, ça fait toujours plaisir ! 😄
-
-<script src="/assets/js/splashes.js"></script>
