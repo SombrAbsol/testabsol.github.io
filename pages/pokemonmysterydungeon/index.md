@@ -14,11 +14,11 @@ Voici tous les outils trouvables sur Internet pour <em>Pokémon Donjon Mystère<
 - [Aide à la réalisation du questionnaire](./1/quiz)
 
 ## Explorateurs du Temps et de l'Ombre
-- [Générateur de Lettres Miracle](./2/wondermail)
-- [Convertisseur de Lettres S.O.S. en Lettres O.K.](./2/mailconverter)
-- [Vérificateur de Q.I.](./2/qi)
+- [Générateur de Lettres Miracle](./2td/wondermail)
+- [Convertisseur de Lettres S.O.S. en Lettres O.K.](./2td/mailconverter)
+- [Vérificateur de Q.I.](./2td/qi)
 
 ## Explorateurs du Ciel
-- [Générateur de Lettres Miracle S](./2/wondermails)
-- [Convertisseur de Lettres Miracle S (européennes et américaines/australiennes)](./2/regionalmailconverter)
-- [Liseuse de Lettres Miracle S](./2/mailreader)
+- [Générateur de Lettres Miracle S](./2s/wondermails)
+- [Convertisseur de Lettres Miracle S (européennes et américaines/australiennes)](./2s/regionalmailconverter)
+- [Liseuse de Lettres Miracle S](./2s/mailreader)
