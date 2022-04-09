@@ -137,13 +137,13 @@ Donjon :
                 </script>
         </form>
 
-<script src="https://testabsol.github.io/assets/js/tools/PMD1/objets-fr.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/objets-fr.js" type="text/javascript">
 </script>
-<script src="https://testabsol.github.io/assets/js/tools/PMD1/zones-fr.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/zones-fr.js" type="text/javascript">
 </script>
-<script src="https://testabsol.github.io/assets/js/tools/PMD1/pokemon-fr.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/pokemon-fr.js" type="text/javascript">
 </script>
-<script src="https://testabsol.github.io/assets/js/tools/PMD1/type-fr.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/type-fr.js" type="text/javascript">
 </script>
 <script type="text/javascript">
         let FriendRescue="Sauvetage Ami"
@@ -172,13 +172,13 @@ Donjon :
         let ObjectiveLine="Objectif :"
         let WonderMailLine="Lettre Miracle :"
 </script>
-<script src="https://testabsol.github.io/assets/js/tools/PMD1/lettresos.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/lettresos.js" type="text/javascript">
 </script>
-<script src="https://testabsol.github.io/assets/js/tools/PMD1/donjobjets.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/donjobjets.js" type="text/javascript">
 </script>
-<script src="https://testabsol.github.io/assets/js/tools/PMD1/ttexte.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/ttexte.js" type="text/javascript">
 </script>
-<script src="https://testabsol.github.io/assets/js/tools/PMD1/diff.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/diff.js" type="text/javascript">
 </script>
 <script type="text/javascript">
         //<![CDATA[
