@@ -88,7 +88,6 @@ Donjon :
                 </label>
                 <br>
                 <br>
-		{:#areas}
                 Zone d'Accueil en récompense :
                 <br>
                 <script type="text/javascript">
@@ -98,7 +97,6 @@ Donjon :
                 </script>
                 <br>
                 <br>
-		{:#type}
                 Title du message :
                 <br>
                 <select name="mhead" onchange="updateftext(this.form);">
