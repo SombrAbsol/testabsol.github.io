@@ -135,7 +135,6 @@ Donjon :
                         }
                         //-->
                 </script>
-        </form>
 
 <script src="/assets/js/tools/PMD1/objets-fr.js" type="text/javascript">
 </script>
