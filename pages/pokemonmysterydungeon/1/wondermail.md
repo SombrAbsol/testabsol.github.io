@@ -88,7 +88,7 @@ Donjon :
                 </label>
                 <br>
                 <br>
-		{:#zones}
+		{:#areas}
                 Zone d'Accueil en récompense :
                 <br>
                 <script type="text/javascript">
