@@ -39,23 +39,17 @@ Type de mission :<br>
 
 Client :<br>
 <script type="text/javascript">
-	<!--
 	showpkmn("client");
-	//-->
 </script><br>
                 
 Pokémon à sauver/trouver :<br>
 <script type="text/javascript">
-	<!--
 	showpkmn("poke");
-	//-->
 </script><br>
 
 Donjon :<br>
 <script type="text/javascript">
-	<!--
 	showdungeon("dungeon");
-	//-->
 </script><br>
 
 Étage :<br>
@@ -72,9 +66,7 @@ Objet à trouver/livrer :<br>
 
 Objets en récompense :<br>
 <script type="text/javascript">
-	<!--
-	showrewards("reward");
-	//-->
+	showrewards("reward")
 </script><br>
 <input type="checkbox" name="money" id="money" />
 <label for="money">
@@ -84,9 +76,7 @@ Objets en récompense :<br>
 
 Zone d'Accueil en récompense :<br>
 <script type="text/javascript">
-	<!--
 	showareas("area");
-	//-->
 </script><br>
 
 Title du message :<br>
@@ -112,11 +102,10 @@ Données de la Lettres Miracle :
 <textarea name="data" cols="60" rows="5">
 </textarea>
 <script type="text/javascript">
-	<!--
-	if(debug){
+	/* if(debug){
 		document.write('<input type="button" value="Encoder la Lettre Miracle" onclick="encwonder(this.form)"/><br/>')
 	}
-	//-->
+	*/
 </script>
 
 
