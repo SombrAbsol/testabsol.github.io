@@ -58,3 +58,5 @@ var friendareas=[
 "Ile Enclavée",
 "Ile de la Fin"
 ];
+
+document.getElementById("areas").innerHTML = splashes[getIndex("areas", splashes.length)];
