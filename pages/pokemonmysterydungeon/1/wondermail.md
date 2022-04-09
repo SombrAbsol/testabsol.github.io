@@ -35,40 +35,40 @@ Type de mission :<br>
 	<option value="">
 		Livrer un objet.
 	</option>
-</select>
+</select><br>
 
 Client :<br>
 <script type="text/javascript">
 	<!--
 	showpkmn("client");
 	//-->
-</script>
+</script><br>
                 
 Pokémon à sauver/trouver :<br>
 <script type="text/javascript">
 	<!--
 	showpkmn("poke");
 	//-->
-</script>
+</script><br>
 
 Donjon :<br>
 <script type="text/javascript">
 	<!--
 	showdungeon("dungeon");
 	//-->
-</script>
+</script><br>
 
 Étage :<br>
 <select name="floor" onchange="updateftext(this.form);">
 	<option value="">
 	</option>
-</select>
+</select><br>
 
 Objet à trouver/livrer :<br>
 <select name="item" onchange="showftext(this.form,0);">
 	<option value="">
 	</option>
-</select>
+</select><br>
 
 Objets en récompense :<br>
 <script type="text/javascript">
@@ -80,33 +80,33 @@ Objets en récompense :<br>
 <label for="money">
 	 + <sup>P</sup>o<sup>K</sup>é
 	<img src="../images/POKé_PMD1.png" alt="POKé PMD1" />
-</label>
+</label><br>
 
 Zone d'Accueil en récompense :<br>
 <script type="text/javascript">
 	<!--
 	showareas("area");
 	//-->
-</script>
+</script><br>
 
 Title du message :<br>
 <select name="mhead" onchange="updateftext(this.form);">
 	<option value="">
 	</option>
-</select>
+</select><br>
 
 Contenu du message :<br>
 <select name="mline1">
 	<option value="">
 	</option>
-</select>
+</select><br>
 
 
-<input type="button" value="Générer la Lettre Miracle" onclick="genwonder(this.form)" />
+<input type="button" value="Générer la Lettre Miracle" onclick="genwonder(this.form)" /><br>
 Mot de passe de la Lettre Miracle :<br>
 <textarea name="wonder" cols="60" rows="5">
 </textarea><br>
-<input type="button" value="Décoder la Lettre Miracle" onclick="decwonder(this.form)" />
+<input type="button" value="Décoder la Lettre Miracle" onclick="decwonder(this.form)" /><br>
 
 Données de la Lettres Miracle :
 <textarea name="data" cols="60" rows="5">
