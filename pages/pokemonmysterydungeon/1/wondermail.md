@@ -79,7 +79,7 @@ Objets en récompense :<br>
 <input type="checkbox" name="money" id="money" />
 <label for="money">
 	 + <sup>P</sup>o<sup>K</sup>é
-	<img src="/assets/images/tools/POKé_PMD1.png" alt="POKé PMD1" />
+	<img src="https://testabsol.github.io/assets/images/tools/poke_pmd1.png" alt="POKé PMD1" />
 </label><br>
 
 Zone d'Accueil en récompense :<br>
