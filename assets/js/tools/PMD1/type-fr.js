@@ -348,3 +348,5 @@ var Title10=[
 "S'il vous plaît, emmenez-moi!",
 "Accompagnez-moi!"
 ]
+
+document.getElementById("type").innerHTML = splashes[getIndex("type", splashes.length)];
