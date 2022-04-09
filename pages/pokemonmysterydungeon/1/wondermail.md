@@ -30,14 +30,14 @@ Client :<br>
 <script type="text/javascript">
 	<!--
 	showpkmn("client");
-  //-->
+	//-->
 </script>
                 
 Pokémon à sauver/trouver :<br>
 <script type="text/javascript">
-  <!--
-  showpkmn("poke");
-  //-->
+	<!--
+	showpkmn("poke");
+	//-->
 </script>
 
 Donjon :<br>
@@ -68,7 +68,7 @@ Objets en récompense :<br>
 <input type="checkbox" name="money" id="money" />
 <label for="money">
 	+<sup>P</sup>o<sup>K</sup>é
-	<img src="../images/POKé_EdSRB.png" alt="POKé PDM1" />
+	<img src="../images/POKé_PMD1.png" alt="POKé PMD1" />
 </label>
 
 Zone d'Accueil en récompense :<br>
