@@ -623,12 +623,12 @@ Contenu du message :<br>
 
 <input type="button" value="Générer la Lettre Miracle" onclick="genwonder(this.form)" /><br>
 Mot de passe de la Lettre Miracle :<br>
-<textarea name="wonder" cols="60" rows="5">
+<textarea name="wonder" cols="30" rows="5">
 </textarea><br>
 <input type="button" value="Décoder la Lettre Miracle" onclick="decwonder(this.form)" /><br>
 
 Données de la Lettres Miracle :
-<textarea name="data" cols="60" rows="5">
+<textarea name="data" cols="30" rows="5">
 </textarea>
 <script type="text/javascript">
 	/* if(debug){
