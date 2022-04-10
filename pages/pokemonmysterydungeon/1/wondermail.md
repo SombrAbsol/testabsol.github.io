@@ -588,9 +588,10 @@ Donjon :<br>
 </select><br>
 
 Objet à trouver/livrer :<br>
-<script type="text/javascript">
-	showitems("item")
-</script><br>
+<select name="item" onchange="showftext(this.form,0);">
+	<option value="">
+	</option>
+</select><br>
 
 Objets en récompense :<br>
 <script type="text/javascript">
