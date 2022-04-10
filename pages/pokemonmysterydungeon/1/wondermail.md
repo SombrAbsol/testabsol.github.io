@@ -18,96 +18,6 @@ Il est tout à fait normal qu'en indiquant au générateur que vous voulez une Z
 
 Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https://web.archive.org/web/20141224065334/http://www.upokecenter.com/games/dungeon/guides/wondermail.php)
 
-Type de mission :<br>
-<select name="type" onchange="updateform(this.form);">
-	<option value="">
-		M'aider.
-	</option>
-	<option value="">
-		Trouver quelqu'un.
-	</option>
-	<option value="">
-		Me mener à quelqu'un.
-	</option>
-	<option value="">
-		Trouver un objet.
-	</option>
-	<option value="">
-		Livrer un objet.
-	</option>
-</select><br>
-
-Client :<br>
-<script type="text/javascript">
-	showpkmn("client");
-</script><br>
-                
-Pokémon à sauver/trouver :<br>
-<script type="text/javascript">
-	showpkmn("poke");
-</script><br>
-
-Donjon :<br>
-<script type="text/javascript">
-	showdungeon("dungeon");
-</script><br>
-
-Étage :<br>
-<select name="floor" onchange="updateftext(this.form);">
-	<option value="">
-	</option>
-</select><br>
-
-Objet à trouver/livrer :<br>
-<select name="item" onchange="showftext(this.form,0);">
-	<option value="">
-	</option>
-</select><br>
-
-Objets en récompense :<br>
-<script type="text/javascript">
-	showrewards("reward")
-</script><br>
-<input type="checkbox" name="money" id="money" />
-<label for="money">
-	 + <sup>P</sup>o<sup>K</sup>é
-	<img src="/assets/images/tools/poke_pmd1.png" alt="POKé PMD1" />
-</label><br>
-
-Zone d'Accueil en récompense :<br>
-<script type="text/javascript">
-	showareas("area");
-</script><br>
-
-Title du message :<br>
-<select name="mhead" onchange="updateftext(this.form);">
-	<option value="">
-	</option>
-</select><br>
-
-Contenu du message :<br>
-<select name="mline1">
-	<option value="">
-	</option>
-</select><br>
-
-
-<input type="button" value="Générer la Lettre Miracle" onclick="genwonder(this.form)" /><br>
-Mot de passe de la Lettre Miracle :<br>
-<textarea name="wonder" cols="60" rows="5">
-</textarea><br>
-<input type="button" value="Décoder la Lettre Miracle" onclick="decwonder(this.form)" /><br>
-
-Données de la Lettres Miracle :
-<textarea name="data" cols="60" rows="5">
-</textarea>
-<script type="text/javascript">
-	/* if(debug){
-		document.write('<input type="button" value="Encoder la Lettre Miracle" onclick="encwonder(this.form)"/><br/>')
-	}
-	*/
-</script>
-
 
 <script src="/assets/js/tools/PMD1/objets-fr.js" type="text/javascript">
 </script>
@@ -634,4 +544,95 @@ Données de la Lettres Miracle :
          }
         }
         //]]>
+</script>
+
+
+Type de mission :<br>
+<select name="type" onchange="updateform(this.form);">
+	<option value="">
+		M'aider.
+	</option>
+	<option value="">
+		Trouver quelqu'un.
+	</option>
+	<option value="">
+		Me mener à quelqu'un.
+	</option>
+	<option value="">
+		Trouver un objet.
+	</option>
+	<option value="">
+		Livrer un objet.
+	</option>
+</select><br>
+
+Client :<br>
+<script type="text/javascript">
+	showpkmn("client");
+</script><br>
+                
+Pokémon à sauver/trouver :<br>
+<script type="text/javascript">
+	showpkmn("poke");
+</script><br>
+
+Donjon :<br>
+<script type="text/javascript">
+	showdungeon("dungeon");
+</script><br>
+
+Étage :<br>
+<select name="floor" onchange="updateftext(this.form);">
+	<option value="">
+	</option>
+</select><br>
+
+Objet à trouver/livrer :<br>
+<select name="item" onchange="showftext(this.form,0);">
+	<option value="">
+	</option>
+</select><br>
+
+Objets en récompense :<br>
+<script type="text/javascript">
+	showrewards("reward")
+</script><br>
+<input type="checkbox" name="money" id="money" />
+<label for="money">
+	 + <sup>P</sup>o<sup>K</sup>é
+	<img src="/assets/images/tools/poke_pmd1.png" alt="POKé PMD1" />
+</label><br>
+
+Zone d'Accueil en récompense :<br>
+<script type="text/javascript">
+	showareas("area");
+</script><br>
+
+Title du message :<br>
+<select name="mhead" onchange="updateftext(this.form);">
+	<option value="">
+	</option>
+</select><br>
+
+Contenu du message :<br>
+<select name="mline1">
+	<option value="">
+	</option>
+</select><br>
+
+
+<input type="button" value="Générer la Lettre Miracle" onclick="genwonder(this.form)" /><br>
+Mot de passe de la Lettre Miracle :<br>
+<textarea name="wonder" cols="60" rows="5">
+</textarea><br>
+<input type="button" value="Décoder la Lettre Miracle" onclick="decwonder(this.form)" /><br>
+
+Données de la Lettres Miracle :
+<textarea name="data" cols="60" rows="5">
+</textarea>
+<script type="text/javascript">
+	/* if(debug){
+		document.write('<input type="button" value="Encoder la Lettre Miracle" onclick="encwonder(this.form)"/><br/>')
+	}
+	*/
 </script>
