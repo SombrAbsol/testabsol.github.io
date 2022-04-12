@@ -294,7 +294,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
          let mtype=document.getElementById("type");
          let poke1=option(document.getElementById("client"))
          let poke2=option(document.getElementById("poke"))
-         let item=items[option(document.getElementById("item"))]
+         let item=items[option(document.getElementById("item")]
          let fthead=FindFlavorTextHead(mtype,poke1,poke2)
          let oldsel=f.mhead.selectedIndex
          f.mhead.options.length=0
@@ -318,12 +318,12 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
         }
         
         function updateftext(f){
-         let mtype=f.type.selectedIndex
-         let poke1=option(f.client)
-         let poke2=option(f.poke)
-         let dungeon=option(f.dungeon)
-         let floor=option(f.floor)
-         let item=items[option(f.item)]
+         let mtype=document.getElementById("type");
+         let poke1=option(document.getElementById("client")
+         let poke2=option(document.getElementById("poke")
+         let dungeon=option(document.getElementById("dungeon"))
+         let floor=option(document.getElementById("floor")
+         let item=items[option(document.getElementById("item")]
          let headinfo=f.mhead.options.value
          let oldsel,newsel=0
          headinfo=headinfo.split(",")
@@ -635,4 +635,4 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
 		}
 		*/
 	</script>
-	</form>
+</form>
