@@ -503,7 +503,6 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
     }
     //]]>
 </script>
-<form>
   Type de mission :
   <br>
   <select name="type" onchange="updateform(this.form);">
@@ -610,4 +609,3 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
 		}
 		*/
   </script>
-</form>
