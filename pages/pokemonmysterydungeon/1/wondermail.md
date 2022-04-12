@@ -21,8 +21,9 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
 <script src="/assets/js/tools/PMD1/type-fr.js" type="text/javascript">
 </script>
 <script type="text/javascript">
-  //
-  < ![CDATA[let AboveGround = [
+      //<![CDATA[
+
+      let AboveGround = [
         0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0,
         1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0
