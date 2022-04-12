@@ -584,14 +584,12 @@ Donjon :<br>
 Étage :<br>
 <select name="floor" onchange="updateftext(this.form);">
 	<option value="">
-		
 	</option>
 </select><br>
 
 Objet à trouver/livrer :<br>
 <select name="item" onchange="showftext(this.form,0);">
 	<option value="">
-		
 	</option>
 </select><br>
 
@@ -613,14 +611,12 @@ Zone d'Accueil en récompense :<br>
 Title du message :<br>
 <select name="mhead" onchange="updateftext(this.form);">
 	<option value="">
-		
 	</option>
 </select><br>
 
 Contenu du message :<br>
 <select name="mline1">
 	<option value="">
-		
 	</option>
 </select><br>
 
