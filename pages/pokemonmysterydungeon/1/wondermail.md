@@ -12,6 +12,7 @@ Concernant les caractères spéciaux :
 - Pour les points de suspension « … », utilisez à la place « . ».
 Il est tout à fait normal qu'en indiquant au générateur que vous voulez une Zone d'Accueil en récompense, celle-ci soit affichée comme étant un Passmuraille lors du décodage de la Lettre Miracle.
 Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https://web.archive.org/web/20141224065334/http://www.upokecenter.com/games/dungeon/guides/wondermail.php)
+
 <script src="/assets/js/tools/PMD1/objets-fr.js" type="text/javascript">
 </script>
 <script src="/assets/js/tools/PMD1/zones-fr.js" type="text/javascript">
@@ -503,6 +504,8 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
         }
         //]]>
 </script>
+
+
   Type de mission :
   <br>
   <select name="type" onchange="updateform(this.form);">
