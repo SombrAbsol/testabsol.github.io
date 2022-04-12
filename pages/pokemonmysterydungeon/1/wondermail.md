@@ -22,6 +22,41 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
 <script src="/assets/js/tools/PMD1/type-fr.js" type="text/javascript">
 </script>
 <script type="text/javascript">
+  let FriendRescue="Sauvetage Ami"
+  let RescueType0="M'aider."
+  let RescueType1="Trouver XXPKMN."
+  let RescueType2="Me mener à XXPKMN."
+  let RescueType3="Trouver XXITEM !"
+  let RescueType4="Livrer XXITEM !"
+  let BasementFloor="E. -XX"
+  let AboveGroundFloor="E. XX"
+  let SpecialMission="Mission spéciale"
+  let ChooseClient="Choisissez un client."
+  let ChooseTarget="Choisissez un Pokémon à sauver/trouver."
+  let ChooseItem="Choisissez un objet à trouver ou à livrer."
+  let ItemNotFound="L'objet XX ne peut pas être trouvé dans le donjon YY."
+  let FriendAreaError="Pour recevoir une Zone d'Accueil en récompense, la mission doit être au moins de difficulté D."
+  let InvalidPassword="Le mot de passe est incorrect."
+  let FriendAreaReward="Zone d'Accueil [XX]."
+  let NearPlace="Vers XX"
+  let DifficultyLine="Difficulté :"
+  let PlusReward="XX + ?"
+  let PlusRewardBrackets="XX + ? [YY]"
+  let RewardLine="Prime :"
+  let PlaceLine="Lieu :"
+  let ClientLine="Client :"
+  let ObjectiveLine="Objectif :"
+  let WonderMailLine="Lettre Miracle :"
+</script>
+<script src="/assets/js/tools/PMD1/lettresos.js" type="text/javascript">
+</script>
+<script src="/assets/js/tools/PMD1/donjobjets.js" type="text/javascript">
+</script>
+<script src="/assets/js/tools/PMD1/ttexte.js" type="text/javascript">
+</script>
+<script src="/assets/js/tools/PMD1/diff.js" type="text/javascript">
+</script>
+<script type="text/javascript">
         //<![CDATA[
 
         let AboveGround=[
@@ -34,7 +69,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
          return AboveGround[d]
         }
         function showitems(name){
-         document.write("<select name=\""+name+"\">");
+         document.write("<select id=\""+name+"\">");
          for(let i=0;i<items.length;i++){
           document.write("<option value=\"\">"+items[i]+" ["+i.toString(16)+"]</option>");  
          } 
@@ -42,7 +77,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
         }
 
         function showpokemon(name){
-         document.write("<select name=\""+name+"\">");
+         document.write("<select id=\""+name+"\">");
          for(let i=0;i<pokemon.length;i++){
           document.write("<option value=\"\">"+pokemon[i]+"</option>");  
          } 
@@ -91,9 +126,9 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
         "050B033346101F14140C644C29646402"
 
         onload=function(){
-         showfloors(document.s)
-         showfind2(document.s)
-         showftext(document.s,1)
+         showfloors()
+         showfind2()
+         showftext(1)
         }
 
         function isbaditem(x){
@@ -159,7 +194,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
 
 
         function option(x){
-         return parseInt(x[x.selectedIndex].value)
+         return parseInt(x.value)
         }
 
 
@@ -175,17 +210,17 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
          }
         }
 
-        function showfloors(f){
-         let dungeon=option(f.dungeon)
+        function showfloors(){
+         let dungeon=option(document.getElementById("dungeon"))
          let numfloors=c2c(floors,dungeon);
-         f.floor.options.length=0
+         document.getElementById("floor").options.length=0
          for(let i=1;i<numfloors;i++){
-          f.floor.options[i-1]=new Option(i+"",i+"")
+          document.getElementById("floor").options[i-1]=new Option(i+"",i+"")
          }
         }
 
         function showdungeon(name){
-         document.write("<select name=\""+name+"\" onchange=\"showfloors(this.form);updateform(this.form);\">");
+         document.write("<select id=\""+name+"\" onchange=\"showfloors();updateform();\">");
          for(let i=0;i<dungeons.length;i++){
           if(!isbaddungeon(i)){
            document.write("<option value=\""+i+"\">"+dungeons[i]+"</option>");  
@@ -200,7 +235,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
         }
 
         function showpkmn(name){
-         document.write("<select name=\""+name+"\" onchange=\"showftext(this.form);\">");
+         document.write("<select id=\""+name+"\" onchange=\"showftext();\">");
          let poke=[]
          for(let i=0;i<pokemon.length;i++){
           if(i==0||!isbadpokemon(i)){
@@ -216,7 +251,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
 
 
         function showareas(name){
-         document.write("<select name=\""+name+"\">");
+         document.write("<select id=\""+name+"\">");
          document.write("<option value=\"-1\">\-\-\-\-\-\-</a>");
          for(let i=0;i<friendareas.length;i++){
           if(i==10||i==14||i==35||i==36){
@@ -226,38 +261,38 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
          document.write("</select>");
         }
 
-        function showfind2(f){
-         let dungeon=option(f.dungeon)
-         f.item.options.length=0
+        function showfind2(){
+         let dungeon=option(document.getElementById("dungeon"))
+         document.getElementById("item").options.length=0
          let len=0
          for(let i=0;i<items.length;i++){
           if(!isbaditem(i)&&i!=0x69&&i!=0x7c&&(i==0||i>=9)){
-           if(f.type.selectedIndex!=3||ItemInDungeon(i,dungeon)){
-            f.item.options[len++]=new Option(items[i],i+"")
+           if(document.getElementById("type").selectedIndex!=3||ItemInDungeon(i,dungeon)){
+            document.getElementById("item").options[len++]=new Option(items[i],i+"")
            }
           }
          }
         }
 
-        function updateform(f){
-         showfind2(f)
-         showftext(f,0)
+        function updateform(){
+         showfind2()
+         showftext(0)
         }
 
-        function updateform2(f){
-         showfind2(f)
-         showftext(f,1)
+        function updateform2(){
+         showfind2()
+         showftext(1)
         }
 
 
-        function showftext(f,typechanged){
-         let mtype=f.type.selectedIndex
-         let poke1=option(f.client)
-         let poke2=option(f.poke)
-         let item=items[option(f.item)]
+        function showftext(typechanged){
+         let mtype=document.getElementById("type").selectedIndex
+         let poke1=option(document.getElementById("client"))
+         let poke2=option(document.getElementById("poke"))
+         let item=items[option(document.getElementById("item"))]
          let fthead=FindFlavorTextHead(mtype,poke1,poke2)
-         let oldsel=f.mhead.selectedIndex
-         f.mhead.options.length=0
+         let oldsel=document.getElementById("mhead").selectedIndex
+         document.getElementById("mhead").options.length=0
          let len=0
          for(let i=0;i<fthead.length;i++){
           let optstr=fthead[i][0]+","+fthead[i][1]+","+fthead[i][2]
@@ -269,29 +304,29 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
           }
           ftext=ftext.replace(/\&\#x2642\;/g,"\u2642")
           ftext=ftext.replace(/\&\#x2640\;/g,"\u2640")
-          f.mhead.options[len++]=new Option(ftext,optstr)
+          document.getElementById("mhead").options[len++]=new Option(ftext,optstr)
          }
          if(oldsel>=0&&typechanged){
-          f.mhead.selectedIndex=oldsel
+          document.getElementById("mhead").selectedIndex=oldsel
          }
-         updateftext(f)
+         updateftext()
         }
 
-        function updateftext(f){
-         let mtype=f.type.selectedIndex
-         let poke1=option(f.client)
-         let poke2=option(f.poke)
-         let dungeon=option(f.dungeon)
-         let floor=option(f.floor)
-         let item=items[option(f.item)]
-         let headinfo=f.mhead.options[f.mhead.selectedIndex].value
+        function updateftext(){
+         let mtype=document.getElementById("type").selectedIndex
+         let poke1=option(document.getElementById("client"))
+         let poke2=option(document.getElementById("poke"))
+         let dungeon=option(document.getElementById("dungeon"))
+         let floor=option(document.getElementById("floor"))
+         let item=items[option(document.getElementById("item"))]
+         let headinfo=document.getElementById("mhead").options[document.getElementById("mhead").selectedIndex].value
          let oldsel,newsel=0
          headinfo=headinfo.split(",")
          let fthead=FindFlavorTextLines(
           headinfo[0],headinfo[1],headinfo[2],
           dungeon,floor)
-         oldsel=optionarray(f.mline1)
-         f.mline1.options.length=0
+         oldsel=optionarray(document.getElementById("mline1"))
+         document.getElementById("mline1").options.length=0
          let len=0
          for(let i=0;i<fthead.length;i++){
           let optstr=fthead[i][0]+","+fthead[i][1]+","+fthead[i][2]
@@ -310,15 +345,15 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
           ftext=ftext.replace(/\&\#x2642\;/g,"\u2642")
           ftext=ftext.replace(/\&\#x2640\;/g,"\u2640")
           ftext=ftext.replace(/<!\-\-break\-\->/g,"") 
-          f.mline1.options[len++]=new Option(ftext,optstr)
+          document.getElementById("mline1").options[len++]=new Option(ftext,optstr)
          }
          if(oldsel.length>0)
-          f.mline1.selectedIndex=newsel
+          document.getElementById("mline1").selectedIndex=newsel
         }
 
 
         function showrewards(name){
-         document.write("<select name=\""+name+"\">");
+         document.write("<select id=\""+name+"\">");
          for(let i=0;i<items.length;i++){
           if(!isbaditem(i)){
            document.write("<option value=\""+i+"\">"+items[i]+"</option>");  
@@ -327,28 +362,28 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
          document.write("</select>");
         }
 
-        function setpass(f,pass){
-         let headinfo=optionarray(f.mhead)
-         let line1=optionarray(f.mline1)
+        function setpass(pass){
+         let headinfo=optionarray(document.getElementById("mhead"))
+         let line1=optionarray(document.getElementById("mline1"))
          PassSetFlavorText(pass,headinfo[0],headinfo[1],headinfo[2],
            line1[2]);
         }
 
-        function genwonder(f){
+        function genwonder(){
          let pass=[]
          for(let i=0;i<20;i++){
           pass[i]=0
          }
          pass[0]=5
-         pass[1]=f.type.selectedIndex
-         pass[4]=option(f.dungeon)
-         pass[5]=option(f.floor)
+         pass[1]=document.getElementById("type").selectedIndex
+         pass[4]=option(document.getElementById("dungeon"))
+         pass[5]=option(document.getElementById("floor"))
          pass[2]=0
          pass[8]=0xFF
          pass[9]=0xFF
          pass[10]=0xFF
-         setpass(f,pass)
-         let poke=option(f.client)
+         setpass(pass)
+         let poke=option(document.getElementById("client"))
          if(poke==0){
           alert(ChooseClient)
           return 0
@@ -356,7 +391,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
          pass[12]=poke&0xFF
          pass[13]=(poke>>8)&0xFF
          if(pass[1]==1||pass[1]==2){
-          let poke=option(f.poke)
+          let poke=option(document.getElementById("poke"))
           if(poke==0){
            alert(ChooseTarget)
            return 0
@@ -368,7 +403,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
           pass[15]=pass[13]
          }
          if(pass[1]==3||pass[1]==4){
-          pass[16]=option(f.item)
+          pass[16]=option(document.getElementById("item"))
           if(pass[16]==0){
            alert(ChooseItem)
            return 0
@@ -379,29 +414,29 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
          } else {
           pass[16]=9
          }
-         if(f.area.selectedIndex){
+         if(document.getElementById("area").selectedIndex){
           if(GetDifficulty(pass[1],pass[4],pass[5])==0){
            alert(FriendAreaError)
            return
           }
           pass[17]=9
           pass[18]=9
-          pass[19]=option(f.area)
+          pass[19]=option(document.getElementById("area"))
          } else 
-         if(f.reward.selectedIndex){
-        //  pass[17]=(f.money.checked)?1:3
-          pass[17]=(f.money.checked)?6:8
-          pass[18]=option(f.reward)
+         if(document.getElementById("reward").selectedIndex){
+        //  pass[17]=(document.getElementById("money").checked)?1:3
+          pass[17]=(document.getElementById("money").checked)?6:8
+          pass[18]=option(document.getElementById("reward"))
          } else {
           pass[17]=5
           pass[18]=9
          }
          let wonder=datatowonderpass(pass)
-         f.wonder.value=formatpass(wonder)
+         document.getElementById("wonder").value=formatpass(wonder)
          if(debug){
-          f.data.value=tostr(pass)
+          document.getElementById("data").value=tostr(pass)
          } else {
-          f.data.value=maildata(pass)
+          document.getElementById("data").value=maildata(pass)
          }
         }
 
@@ -466,8 +501,8 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
          return data
         }
 
-        function decwonder(f){
-         let x=entrytopass(f.wonder.value)
+        function decwonder(){
+         let x=entrytopass(document.getElementById("wonder").value)
          let pass=[]
          if(!convertwonderpass(x,pass)
            ||pass[0]!=5
@@ -475,30 +510,30 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
           alert(InvalidPassword)
          } else {
           x=datatowonderpass(pass)
-          f.wonder.value=formatpass(x)
+          document.getElementById("wonder").value=formatpass(x)
           if(debug){
-           f.data.value=tostr(pass)
+           document.getElementById("data").value=tostr(pass)
            alert(maildata(pass))
           } else {
            let md=maildata(pass)
            if(!md){
             alert(InvalidPassword)
            } else {
-            f.data.value=md
+            document.getElementById("data").value=md
            }
           }
          }
         }
 
-        function encwonder(f){
-         let pass=f.data.value.split(",")
+        function encwonder(){
+         let pass=document.getElementById("data").value.split(",")
          for(let i=0;i<pass.length;i++){
           pass[i]=parseInt(pass[i],16)
          }
          x=datatowonderpass(pass)
-         f.wonder.value=formatpass(x)
+         document.getElementById("wonder").value=formatpass(x)
          if(debug){
-          f.data.value=tostr(pass)
+          document.getElementById("data").value=tostr(pass)
           alert(maildata(pass))
          }
         }
@@ -506,112 +541,110 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
 </script>
 
 
-<form name="s" action="javascript:void(null)">
-  Type de mission :
-  <br>
-  <select name="type" onchange="updateform(this.form);">
-    <option value="">
-      M'aider.
-    </option>
-    <option value="">
-      Trouver quelqu'un.
-    </option>
-    <option value="">
-      Me mener à quelqu'un.
-    </option>
-    <option value="">
-      Trouver un objet.
-    </option>
-    <option value="">
-      Livrer un objet.
-    </option>
-  </select>
-  <br>
-  Client :
-  <br>
-  <script type="text/javascript">
-    showpkmn("client");
-  </script>
-  <br>
-  Pokémon à sauver/trouver :
-  <br>
-  <script type="text/javascript">
-    showpkmn("poke");
-  </script>
-  <br>
-  Donjon :
-  <br>
-  <script type="text/javascript">
-    showdungeon("dungeon");
-  </script>
-  <br>
-  Étage :
-  <br>
-  <select name="floor" onchange="updateftext(this.form);">
-    <option value="">
-    </option>
-  </select>
-  <br>
-  Objet à trouver/livrer :
-  <br>
-  <select name="item" onchange="showftext(this.form,0);">
-    <option value="">
-    </option>
-  </select>
-  <br>
-  Objets en récompense :
-  <br>
-  <script type="text/javascript">
-    showrewards("reward")
-  </script>
-  <br>
-  <input type="checkbox" name="money" id="money" />
-  <label for="money">
-    + 
-    <sup>P
-    </sup>o
-    <sup>K
-    </sup>é
-    <img src="/assets/images/tools/poke_pmd1.png" alt="POKé PMD1" />
-  </label>
-  <br>
-  Zone d'Accueil en récompense :
-  <br>
-  <script type="text/javascript">
-    showareas("area");
-  </script>
-  <br>
-  Title du message :
-  <br>
-  <select name="mhead" onchange="updateftext(this.form);">
-    <option value="">
-    </option>
-  </select>
-  <br>
-  Contenu du message :
-  <br>
-  <select name="mline1">
-    <option value="">
-    </option>
-  </select>
-  <br>
-  <input type="button" value="Générer la Lettre Miracle" onclick="genwonder(this.form)" />
-  <br>
-  Mot de passe de la Lettre Miracle :
-  <br>
-  <textarea name="wonder" cols="30" rows="5">
-  </textarea>
-  <br>
-  <input type="button" value="Décoder la Lettre Miracle" onclick="decwonder(this.form)" />
-  <br>
-  Données de la Lettres Miracle :
-  <textarea name="data" cols="30" rows="5">
-  </textarea>
-  <script type="text/javascript">
-	/*
-	  if(debug){
-		document.write('<input type="button" value="Encoder la Lettre Miracle" onclick="encwonder(this.form)"/><br/>')
-	  }
-	*/
-  </script>
-</form>
+Type de mission :
+<br>
+<select id="type" onchange="updateform();">
+  <option value="">
+    M'aider.
+  </option>
+  <option value="">
+    Trouver quelqu'un.
+  </option>
+  <option value="">
+    Me mener à quelqu'un.
+  </option>
+  <option value="">
+    Trouver un objet.
+  </option>
+  <option value="">
+    Livrer un objet.
+  </option>
+</select>
+<br>
+Client :
+<br>
+<script type="text/javascript">
+  showpkmn("client");
+</script>
+<br>
+Pokémon à sauver/trouver :
+<br>
+<script type="text/javascript">
+  showpkmn("poke");
+</script>
+<br>
+Donjon :
+<br>
+<script type="text/javascript">
+  showdungeon("dungeon");
+</script>
+<br>
+Étage :
+<br>
+<select id="floor" onchange="updateftext();">
+  <option value="">
+  </option>
+</select>
+<br>
+Objet à trouver/livrer :
+<br>
+<select id="item" onchange="showftext(0);">
+  <option value="">
+  </option>
+</select>
+<br>
+Objets en récompense :
+<br>
+<script type="text/javascript">
+  showrewards("reward")
+</script>
+<br>
+<input type="checkbox" id="money" id="money" />
+<label for="money">
+  + 
+  <sup>P
+  </sup>o
+  <sup>K
+  </sup>é
+  <img src="/assets/images/tools/poke_pmd1.png" alt="POKé PMD1" />
+</label>
+<br>
+Zone d'Accueil en récompense :
+<br>
+<script type="text/javascript">
+  showareas("area");
+</script>
+<br>
+Title du message :
+<br>
+<select id="mhead" onchange="updateftext();">
+  <option value="">
+  </option>
+</select>
+<br>
+Contenu du message :
+<br>
+<select id="mline1">
+  <option value="">
+  </option>
+</select>
+<br>
+<input type="button" value="Générer la Lettre Miracle" onclick="genwonder()" />
+<br>
+Mot de passe de la Lettre Miracle :
+<br>
+<textarea id="wonder" cols="30" rows="5">
+</textarea>
+<br>
+<input type="button" value="Décoder la Lettre Miracle" onclick="decwonder()" />
+<br>
+Données de la Lettres Miracle :
+<textarea id="data" cols="30" rows="5">
+</textarea>
+<script type="text/javascript">
+/*
+  if(debug){
+  document.write('<input type="button" value="Encoder la Lettre Miracle" onclick="encwonder()"/><br/>')
+  }
+*/
+</script>
