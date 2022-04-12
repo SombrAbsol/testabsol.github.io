@@ -545,7 +545,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
         //]]>
 </script>
 
-<form name="s" action="javascript:void(null)">
+<form>
 	Type de mission :<br>
 	<select name="type" onchange="updateform(this.form);">
 		<option value="">
