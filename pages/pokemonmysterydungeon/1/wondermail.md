@@ -601,11 +601,7 @@ Objets en récompense :
 <br>
 <input type="checkbox" id="money" id="money" />
 <label for="money">
-  + 
-  <sup>P
-  </sup>o
-  <sup>K
-  </sup>é
+  + <sup>P</sup>o<sup>K</sup>é
   <img src="/assets/images/tools/poke_pmd1.png" alt="POKé PMD1" />
 </label>
 <br>
