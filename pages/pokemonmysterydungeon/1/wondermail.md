@@ -540,112 +540,120 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
         //]]>
 </script>
 
-
-Type de mission :
-<br>
-<select id="type" onchange="updateform();">
-  <option value="">
-    M'aider.
-  </option>
-  <option value="">
-    Trouver quelqu'un.
-  </option>
-  <option value="">
-    Me mener à quelqu'un.
-  </option>
-  <option value="">
-    Trouver un objet.
-  </option>
-  <option value="">
-    Livrer un objet.
-  </option>
-</select>
-<br>
-Client :
-<br>
-<script type="text/javascript">
-  showpkmn("client");
-</script>
-<br>
-Pokémon à sauver/trouver :
-<br>
-<script type="text/javascript">
-  showpkmn("poke");
-</script>
-<br>
-Donjon :
-<br>
-<script type="text/javascript">
-  showdungeon("dungeon");
-</script>
-<br>
-Étage :
-<br>
-<select id="floor" onchange="updateftext();">
-  <option value="">
-  </option>
-</select>
-<br>
-Objet à trouver/livrer :
-<br>
-<select id="item" onchange="showftext(0);">
-  <option value="">
-  </option>
-</select>
-<br>
-Objets en récompense :
-<br>
-<script type="text/javascript">
-  showrewards("reward")
-</script>
-<br>
-<input type="checkbox" id="money" id="money" />
-<label for="money">
-  <p>+ 
+<p>Type de mission :
+  <br>
+  <select id="type" onchange="updateform();">
+    <option value="">
+      M'aider.
+    </option>
+    <option value="">
+      Trouver quelqu'un.
+    </option>
+    <option value="">
+      Me mener à quelqu'un.
+    </option>
+    <option value="">
+      Trouver un objet.
+    </option>
+    <option value="">
+      Livrer un objet.
+    </option>
+  </select>
+  <br>
+  <br>
+  Client :
+  <br>
+  <script type="text/javascript">
+    showpkmn("client");
+  </script>
+  <br>
+  <br>
+  Pokémon à sauver/trouver :
+  <br>
+  <script type="text/javascript">
+    showpkmn("poke");
+  </script>
+  <br>
+  <br>
+  Donjon :
+  <br>
+  <script type="text/javascript">
+    showdungeon("dungeon");
+  </script>
+  <br>
+  <br>
+  Étage :
+  <br>
+  <select id="floor" onchange="updateftext();">
+    <option value="">
+    </option>
+  </select>
+  <br>
+  <br>
+  Objet à trouver/livrer :
+  <br>
+  <select id="item" onchange="showftext(0);">
+    <option value="">
+    </option>
+  </select>
+  <br>
+  <br>
+  Objets en récompense :
+  <br>
+  <script type="text/javascript">
+    showrewards("reward")
+  </script>
+  <input type="checkbox" id="money" id="money" />
+  <label for="money">
+    + 
     <sup>P
     </sup>o
     <sup>K
     </sup>é
-  </p>
-  <img src="/assets/images/tools/poke_pmd1.png" alt="POKé PMD1" />
-</label>
-<br>
-Zone d'Accueil en récompense :
-<br>
-<script type="text/javascript">
-  showareas("area");
-</script>
-<br>
-Title du message :
-<br>
-<select id="mhead" onchange="updateftext();">
-  <option value="">
-  </option>
-</select>
-<br>
-Contenu du message :
-<br>
-<select id="mline1">
-  <option value="">
-  </option>
-</select>
-<br>
-<input type="button" value="Générer la Lettre Miracle" onclick="genwonder()" />
-<br>
-Mot de passe de la Lettre Miracle :
-<br>
-<textarea id="wonder" cols="30" rows="5">
-</textarea>
-<br>
-<input type="button" value="Décoder la Lettre Miracle" onclick="decwonder()" />
-<br>
-Données de la Lettres Miracle :
-<textarea id="data" cols="30" rows="5">
-</textarea>
-<script type="text/javascript">
-/*
-  if(debug){
-  document.write('<input type="button" value="Encoder la Lettre Miracle" onclick="encwonder()"/><br/>')
-  }
-*/
-</script>
+    <img src="/assets/images/tools/poke_pmd1.png" alt="POKé PMD1" />
+  </label>
+  <br>
+  <br>
+  Zone d'Accueil en récompense :
+  <br>
+  <script type="text/javascript">
+    showareas("area");
+  </script>
+  <br>
+  <br>
+  Title du message :
+  <br>
+  <select id="mhead" onchange="updateftext();">
+    <option value="">
+    </option>
+  </select>
+  <br>
+  <br>
+  Contenu du message :
+  <br>
+  <select id="mline1">
+    <option value="">
+    </option>
+  </select>
+  <br>
+  <br>
+  <input type="button" value="Générer la Lettre Miracle" onclick="genwonder()" />
+  <br>
+  Mot de passe de la Lettre Miracle :
+  <textarea id="wonder" cols="30" rows="5">
+  </textarea>
+  <br>
+  <input type="button" value="Décoder la Lettre Miracle" onclick="decwonder()" />
+  <br>
+  <br>
+  Données de la Lettres Miracle :
+  <textarea id="data" cols="30" rows="5">
+  </textarea>
+  <script type="text/javascript">
+  /*
+    if(debug){
+      document.write('<input type="button" value="Encoder la Lettre Miracle" onclick="encwonder()"/><br/>')
+    }
+  */
+  </script>
+</p>
