@@ -640,6 +640,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
   <input type="button" value="Générer la Lettre Miracle" onclick="genwonder()" />
   <br>
   Mot de passe de la Lettre Miracle :
+  <br>
   <textarea id="wonder" cols="30" rows="5">
   </textarea>
   <br>
@@ -647,6 +648,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
   <br>
   <br>
   Données de la Lettres Miracle :
+  <br>
   <textarea id="data" cols="30" rows="5">
   </textarea>
   <script type="text/javascript">
