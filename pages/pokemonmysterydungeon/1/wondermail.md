@@ -605,11 +605,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
   </script>
   <input type="checkbox" id="money" id="money" />
   <label for="money">
-    + 
-    <sup>P
-    </sup>o
-    <sup>K
-    </sup>é
+    + <sup>P</sup>o<sup>K</sup>é
     <img src="/assets/images/tools/poke_pmd1.png" alt="POKé PMD1" />
   </label>
   <br>
@@ -639,10 +635,12 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
   <br>
   <input type="button" value="Générer la Lettre Miracle" onclick="genwonder()" />
   <br>
+  <br>
   Mot de passe de la Lettre Miracle :
   <br>
   <textarea id="wonder" cols="30" rows="5">
   </textarea>
+  <br>
   <br>
   <input type="button" value="Décoder la Lettre Miracle" onclick="decwonder()" />
   <br>
