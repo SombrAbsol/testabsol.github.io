@@ -6,13 +6,13 @@ permalink: /pokemonmysterydungeon/1/sosmail
 # Pokémon Donjon Mystère : Équipe de Secours Rouge et Bleue
 ## Générateur de Lettres S.O.S.
 Utilisez cet outil pour générer une Lettre S.O.S. Dès que vous aurez réussi la mission, entrez le mot de passe de la Lettre O.K. que vous recevrez 
-dans le [aokmail](convertisseur de Lettres) pour obtenir le mot de passe de la Lettre Remerciement.<br>
+dans le [convertisseur de Lettres](aokmail) pour obtenir le mot de passe de la Lettre Remerciement.<br>
 Concernant les caractères spéciaux :
 - Pour le symbole masculin « ♂ », utilisez à la place « # » ;
 - Pour le symbole féminin « ♀ », utilisez à la place « % » ;
 - Pour les points de suspension « … », utilisez à la place « . ».
 
-Source : [https://web.archive.org/web/20150203043525/http://www.upokecenter.com/games/dungeon/guides/sosgen.php](http://www.upokecenter.com/games/dungeon/guides/sosgen.php)
+Source : [http://www.upokecenter.com/games/dungeon/guides/sosgen.php](https://web.archive.org/web/20150203043525/http://www.upokecenter.com/games/dungeon/guides/sosgen.php)
 
 <script src="/assets/js/tools/PMD1/objets-fr.js" type="text/javascript">
 </script>
