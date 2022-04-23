@@ -4,8 +4,6 @@ description: Générateur de Lettres S.O.S. (PDM1)
 permalink: /pokemonmysterydungeon/1/sosmail
 ---
 # Pokémon Donjon Mystère : Équipe de Secours Rouge et Bleue
-<br>
-
 ## Générateur de Lettres S.O.S.
 Utilisez cet outil pour générer une Lettre S.O.S. Dès que vous aurez réussi la mission, entrez le mot de passe de la Lettre O.K. que vous recevrez 
 dans le [convertisseur de Lettres](aokmail) pour obtenir le mot de passe de la Lettre Remerciement.
