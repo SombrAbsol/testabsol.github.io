@@ -4,6 +4,7 @@ description: Générateur de Lettres S.O.S. (PDM1)
 permalink: /pokemonmysterydungeon/1/sosmail
 ---
 # Pokémon Donjon Mystère : Équipe de Secours Rouge et Bleue
+
 ## Générateur de Lettres S.O.S.
 Utilisez cet outil pour générer une Lettre S.O.S. Dès que vous aurez réussi la mission, entrez le mot de passe de la Lettre O.K. que vous recevrez 
 dans le [convertisseur de Lettres](aokmail) pour obtenir le mot de passe de la Lettre Remerciement.
@@ -13,7 +14,7 @@ Concernant les caractères spéciaux :
 - Pour le symbole féminin « ♀ », utilisez à la place « % » ;
 - Pour les points de suspension « … », utilisez à la place « . ».
 
-Source : [http://www.upokecenter.com/games/dungeon/guides/sosgen.php](https://web.archive.org/web/20150203043525/http://www.upokecenter.com/games/dungeon/guides/sosgen.php)
+Source : [http://www.upokecenter.com/games/dungeon/guides/sosgen.php](https://web.archive.org/web/20150203043525/http://www.upokecenter.com/games/dungeon/guides/sosgen.php)<br><br>
 
 <script src="/assets/js/tools/PMD1/objets-fr.js" type="text/javascript">
 </script>
@@ -279,7 +280,7 @@ function encsos(){
     if(debug){
       document.write('<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos()"/>')
       <br>
-      document.write('<textarea id="data" cols="60" rows="5"></textarea>')
+      document.write('<textarea id="data" cols="30" rows="5"></textarea>')
       <br>
       document.write('<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos()"/>')
       <br>
