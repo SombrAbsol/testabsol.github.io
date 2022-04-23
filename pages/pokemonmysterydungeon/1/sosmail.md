@@ -6,7 +6,8 @@ permalink: /pokemonmysterydungeon/1/sosmail
 # Pokémon Donjon Mystère : Équipe de Secours Rouge et Bleue
 ## Générateur de Lettres S.O.S.
 Utilisez cet outil pour générer une Lettre S.O.S. Dès que vous aurez réussi la mission, entrez le mot de passe de la Lettre O.K. que vous recevrez 
-dans le [convertisseur de Lettres](aokmail) pour obtenir le mot de passe de la Lettre Remerciement.<br>
+dans le [convertisseur de Lettres](aokmail) pour obtenir le mot de passe de la Lettre Remerciement.
+
 Concernant les caractères spéciaux :
 - Pour le symbole masculin « ♂ », utilisez à la place « # » ;
 - Pour le symbole féminin « ♀ », utilisez à la place « % » ;
@@ -58,7 +59,7 @@ let floors=
 "050B033346101F14140C644C29646402"
 
 onload=function(){
- showfloors(document.s) 
+ showfloors() 
 }
 
 function isbaditem(x){
@@ -104,21 +105,21 @@ function isbadpokemon(x){
 
 
 function option(x){
- return parseInt(x[x.selectedIndex].value)
+ return parseInt(x.value)
 }
 
-function showfloors(f){
- let dungeon=option(f.dungeon)
+function showfloors(){
+ let dungeon=option(document.getElementById("dungeon"))
  let numfloors=(dungeon>0x3F)?1:c2c(floors,dungeon);
  let startfloor=(dungeon>0x3F)?0:1;
- f.floor.options.length=0
+ document.getElementById("floor").options.length=0
  for(let i=startfloor;i<numfloors;i++){
-  f.floor.options[i-startfloor]=new Option(i+"",i+"")
+  document.getElementById("floor").options[i-startfloor]=new Option(i+"",i+"")
  }
 }
 
 function showdungeon(name){
- document.write("<select name=\""+name+"\" onchange=\"showfloors(this.form)\">");
+ document.write("<select id=\""+name+"\" onchange=\"showfloors()\">");
  for(let i=0;i<dungeons.length;i++){
   if(!isbaddungeon(i)){
    document.write("<option value=\""+i+"\">"+dungeons[i]+"</option>");  
@@ -129,7 +130,7 @@ function showdungeon(name){
 
 
 
-function genpass(f){
+function genpass(){
  let pass=[]
  for(let i=0;i<56;i++){
   pass[i]=0
@@ -137,20 +138,20 @@ function genpass(f){
  pass[0]=1
  pass[1]=0
  pass[2]=0
- pass[4]=option(f.dungeon)
- pass[5]=option(f.floor)
+ pass[4]=option(document.getElementById("dungeon"))
+ pass[5]=option(document.getElementById("floor"))
  pass[8]=Math.floor(Math.random()*256)
  pass[9]=Math.floor(Math.random()*256)
  pass[10]=Math.floor(Math.random()*256)
- let poke=option(f.poke)
+ let poke=option(document.getElementById("poke"))
  if(poke==0){
   alert(ChoosePokemon)
   return 0
  }
  pass[12]=poke&0xFF
  pass[13]=(poke>>8)&0xFF
- let mailid=parseInt(f.mailid.value)
- if(f.mailid.value==""||isNaN(mailid)){
+ let mailid=parseInt(document.getElementById("mailid").value)
+ if(document.getElementById("mailid").value==""||isNaN(mailid)){
   pass[16]=Math.floor(Math.random()*256)
   pass[17]=Math.floor(Math.random()*256)
  } else {
@@ -159,7 +160,7 @@ function genpass(f){
  }
  pass[18]=Math.floor(Math.random()*256)
  pass[19]=Math.floor(Math.random()*256)
- let pokename=f.pokename.value
+ let pokename=document.getElementById("pokename").value
  if(!pokename){
   pokename=pokemon[poke]
  }
@@ -171,8 +172,8 @@ function genpass(f){
   }
   pass[20+i]=c
  }
- let chances=parseInt(f.chances.value)
- if(f.chances.value==""||isNaN(chances)){
+ let chances=parseInt(document.getElementById("chances").value)
+ if(document.getElementById("chances").value==""||isNaN(chances)){
   pass[44]=10
  } else {
   pass[44]=chances
@@ -183,15 +184,15 @@ function genpass(f){
  pass[38]=Math.floor(Math.random()*256)
  pass[39]=Math.floor(Math.random()*256)
  let sos=datatopass(pass)
- f.sos.value=formatpass(sos)
+ document.getElementById("sos").value=formatpass(sos)
  if(debug){
-  f.data.value=tostr(pass)
+  document.getElementById("data").value=tostr(pass)
  }
 }
 
 
 function showpkmn(name){
- document.write("<select name=\""+name+"\">");
+ document.write("<select id=\""+name+"\">");
  for(let i=0;i<pokemon.length;i++){
   if(i==0||1/*||!isbadpokemon(i)*/){
    document.write("<option value=\""+i+"\">"+pokemon[i]+"</option>");  
@@ -200,30 +201,30 @@ function showpkmn(name){
  document.write("</select>");
 }
 
-function decsos(f){
- let x=f.sos.value.replace(/[\n\s\r]/g,"").toUpperCase()
+function decsos(){
+ let x=document.getElementById("sos").value.replace(/[\n\s\r]/g,"").toUpperCase()
  let pass=[]
  if(!convertpass(x,pass)){
   alert("The password is invalid.")
  } else {
   x=datatopass(pass)
-  f.sos.value=formatpass(x)
+  document.getElementById("sos").value=formatpass(x)
   if(debug){
-   f.data.value=tostr(pass)
+   document.getElementById("data").value=tostr(pass)
   }
  }
 }
 
 
-function encsos(f){
- let pass=f.data.value.split(",")
+function encsos(){
+ let pass=document.getElementById("data").value.split(",")
  for(let i=0;i<pass.length;i++){
   pass[i]=parseInt(pass[i],16)
  }
  x=datatopass(pass)
- f.sos.value=formatpass(x)
+ document.getElementById("sos").value=formatpass(x)
  if(debug){
-  f.data.value=tostr(pass)
+  document.getElementById("data").value=tostr(pass)
  }
 }
 
@@ -238,7 +239,7 @@ function encsos(f){
   <br>
   Nom du Pokémon (dix lettres maximum) :
   <br>
-  <input type="text" name="pokename" maxlength="10" size="10" />
+  <input type="text" id="pokename" maxlength="10" size="10" />
   <br>
   <br>
   Donjon :
@@ -250,7 +251,7 @@ function encsos(f){
   <br>
   Étage :
   <br>
-  <select name="floor">
+  <select id="floor">
     <option value="">
     </option>
   </select>
@@ -258,29 +259,29 @@ function encsos(f){
   <br>
   ID de la Lettre (optionnel) :
   <br>
-  <input type="text" name="mailid" maxlength="4" size="4" />
+  <input type="text" id="mailid" maxlength="4" size="4" />
   <br>
   <br>
   Possibilités de sauvetages restantes :
   <br>
-  <input type="text" name="chances" value="10" maxlength="2" size="2" />
+  <input type="text" id="chances" value="10" maxlength="2" size="2" />
   <br>
   <br>
-  <input type="button" value="Générer la Lettre S.O.S." onclick="genpass(this.form)" />
+  <input type="button" value="Générer la Lettre S.O.S." onclick="genpass()" />
   <br>
   <br>
   Mot de passe de la Lettre S.O.S. :
   <br>
-  <textarea name="sos" cols="60" rows="5">
+  <textarea id="sos" cols="60" rows="5">
   </textarea>
   <br>
   <script type="text/javascript">
     if(debug){
-      document.write('<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos(this.form)"/>')
+      document.write('<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos()"/>')
       <br>
-      document.write('<textarea name="data" cols="60" rows="5"></textarea>')
+      document.write('<textarea id="data" cols="60" rows="5"></textarea>')
       <br>
-      document.write('<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos(this.form)"/>')
+      document.write('<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos()"/>')
       <br>
     }
   </script>
