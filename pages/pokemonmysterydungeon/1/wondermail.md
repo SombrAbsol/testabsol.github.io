@@ -5,7 +5,8 @@ permalink: /pokemonmysterydungeon/1/wondermail
 ---
 # Pokémon Donjon Mystère : Équipe de Secours Rouge et Bleue
 ## Générateur de Lettres Miracle
-Utilisez cet outil pour générer une Lettre Miracle.<br>
+Utilisez cet outil pour générer une Lettre Miracle.
+
 Concernant les caractères spéciaux :
 - Pour le symbole masculin « ♂ », utilisez à la place « # » ;
 - Pour le symbole féminin « ♀ », utilisez à la place « % » ;
