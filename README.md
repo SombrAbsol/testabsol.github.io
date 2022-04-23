@@ -1,16 +1,16 @@
-# pk11.us
-Pk11's website
+# SombrAbsol.github.io
+Site Web de SombrAbsol
 
-## Building
-To test the site locally install Jekyll by running:
+## Construction
+Pour tester le site localement, installez Jekyll en exécutant :
 ```
 gem install --user-install bundler jekyll
 ```
-Then run
+Puis exécutez
 ```
 bundle install
 ```
-Then you can run the site by running:
+Puis vous pouvez lancer le site en exécutant :
 ```
 bundle exec jekyll serve
 ```
