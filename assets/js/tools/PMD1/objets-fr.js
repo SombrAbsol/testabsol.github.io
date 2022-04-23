@@ -285,7 +285,7 @@ var dungeons=[
 "Haute Mer",
 "Bois Brouhaha",
 "Grotte Périls",
-"Île Vestiges",
+"Ile Vestige",
 "Eau Merveilleuse",
 "Canal Fantaisie",
 "Passage Roc",
