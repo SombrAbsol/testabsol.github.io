@@ -1,7 +1,6 @@
 ---
 title: Accueil
 description: Site Web de SombrAbsol
-permalink: /
 ---
 
 # Bievenue !
