@@ -6,9 +6,6 @@
 					{{ site.data[page.collection].strings.by | replace: "$1", '<a href="https://github.com/SombrAbsol/" class="link">SombrAbsol</a>'}}<br>
 					{% assign source = site.repo | append: "/blob/main/pages/" | append: page.path %}
 					{{ site.data[page.collection].strings.published-with | replace: "$1", source }}
-					{% if page.show_version %}
-						Version : <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | | truncate: 7, "" }}</a>
-					{% endif %}
 				</p>
 			</div>
 			<div class="col-sm-2">
