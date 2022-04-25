@@ -1,7 +1,6 @@
 ---
 title: SOS Mail Generator (PMD1)
 description: SOS Mail Generator (PMD1)
-permalink: /pokemonmysterydungeon/1/en-US/sosmail
 ---
 # Pokémon Mystery Dungeon: Red/Blue Rescue Team
 ## SOS Mail Generator
