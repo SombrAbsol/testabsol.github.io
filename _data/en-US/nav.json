@@ -1,0 +1,24 @@
+[
+   {
+      "title": "Home",
+      "url": "/"
+   },
+   {
+      "title": "Tools",
+      "items": [
+         {
+            "title": "Mario Kart",
+            "url": "https://testabsol.github.io/mariokart"
+         },
+         {
+            "title": "Pokémon Mystery Dungeon",
+            "url": "https://testabsol.github.io/pokemonmysterydungeon"
+         }
+      ]
+   },
+   {
+      "title": "About",
+      "url": "/about",
+      "key": "a"
+   }
+]
