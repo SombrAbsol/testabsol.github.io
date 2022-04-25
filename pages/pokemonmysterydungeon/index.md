@@ -5,7 +5,7 @@ permalink: /pokemonmysterydungeon
 ---
 
 # Outils pour les jeux de la série Pokémon Donjon Mystère
-Voici tous les outils trouvables sur Internet pour <em>Pokémon Donjon Mystère</em>, la majorité étant originellement en anglais et traduits en français, par mes soins. Vous trouverez sur cette page les fameux générateurs et convertisseurs de Lettres Miracle, S.O.S., O.K. et Remerciement, entre autres.
+Voici tous les outils trouvables sur Internet pour <em>Pokémon Donjon Mystère</em>, la majorité étant originellement en anglais et traduits en français par mes soins. Vous trouverez sur cette page les fameux générateurs et convertisseurs de Lettres Miracle, S.O.S., O.K. et Remerciement, entre autres.
 
 ## Équipe de Secours Rouge et Bleue
 - [Générateur de Lettres Miracle](https://testabsol.github.io/pokemonmysterydungeon/1/wondermail)
