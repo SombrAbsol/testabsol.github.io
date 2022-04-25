@@ -8,11 +8,11 @@
       "items": [
          {
             "title": "Mario Kart",
-            "url": "https://testabsol.github.io/mariokart"
+            "url": "/mariokart"
          },
          {
             "title": "Pokémon Mystery Dungeon",
-            "url": "https://testabsol.github.io/pokemonmysterydungeon"
+            "url": "/pokemonmysterydungeon"
          }
       ]
    },
