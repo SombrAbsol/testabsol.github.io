@@ -1,7 +1,6 @@
 ---
 title: Pokémon Mystery Dungeon
 description: Tools for the Pokémon Mystery Dungeon series
-permalink: /en-US/pokemonmysterydungeon
 ---
 
 # Tools for games of the Pokémon Mystery Dungeon series
