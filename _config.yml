@@ -3,7 +3,6 @@ description  : "Site Web de SombrAbsol"
 repo         : "SombrAbsol/sombrabsol.github.io"
 color        : "#9286ec"
 markdown_ext : "markdown,mkdown,mkdn,mkd,md,html"
-include      : [".well-known"]
 
 defaults:
   - scope:
