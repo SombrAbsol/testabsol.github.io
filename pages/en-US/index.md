@@ -1,7 +1,6 @@
 ---
 title: Home
 description: SombrAbsol's Website
-permalink: /en-US
 ---
 
 # Welcome!
