@@ -3,19 +3,20 @@
 		<div class="row pb-3">
 			<div class="col-sm-10">
 				<p class="text-light">
-					Par : <a href="https://github.com/SombrAbsol" class="link">SombrAbsol</a><br>
-					Publié avec <a href="https://pages.github.com">GitHub Pages</a>, voir <a href="https://github.com/{{ site.repo }}">la source</a> sur GitHub.<br>
+					{{ site.data[page.collection].strings.by | replace: "$1", '<a href="https://github.com/SombrAbsol/" class="link">SombrAbsol</a>'}}<br>
+					{% assign source = site.repo | append: "/blob/main/pages/" | append: page.path %}
+					{{ site.data[page.collection].strings.published-with | replace: "$1", source }}
 					{% if page.show_version %}
 						Version : <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}">{{ site.github.build_revision | | truncate: 7, "" }}</a>
 					{% endif %}
 				</p>
 			</div>
 			<div class="col-sm-2">
-				<label for="themeSelector" class="text-light">Thème :</label>
+				<label for="themeSelector" class="text-light">{{ site.data[page.collection].strings.color-scheme }}</label>
 				<select id="themeSelector" class="form-select form-select-dark text-light" onchange="setTheme(value)">
-					<option value="default">Défaut</option>
-					<option value="dark">Sombre</option>
-					<option value="light">Clair</option>
+					<option value="default">{{ site.data[page.collection].strings.default }}</option>
+					<option value="dark">{{ site.data[page.collection].strings.dark }}</option>
+					<option value="light">{{ site.data[page.collection].strings.light }}</option>
 				</select>
 			</div>
 		</div>
