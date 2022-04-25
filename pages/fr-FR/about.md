@@ -1,7 +1,6 @@
 ---
 title: À propos
 description: Informations variées, comme mes réseaux
-permalink: /about
 ---
 
 # À propos
