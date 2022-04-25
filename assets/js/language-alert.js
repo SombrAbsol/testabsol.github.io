@@ -9,7 +9,7 @@ let languageID = null;
 
 function updateLanguageAlert() {
 	if(languageID)
-		document.getElementById("language-alert-link").href = (languageID == "en-US" ? "" : ("/" + languageID)) + window.location.pathname.replace(/[a-z]{2}-[A-Z]{2}\//, "") + (window.location.search ?? "") + (window.location.hash ?? "");
+		document.getElementById("language-alert-link").href = (languageID == "fr-FR" ? "" : ("/" + languageID)) + window.location.pathname.replace(/[a-z]{2}-[A-Z]{2}\//, "") + (window.location.search ?? "") + (window.location.hash ?? "");
 }
 
 if(!sessionStorage.languageAlertDismissed) {
@@ -51,7 +51,7 @@ if(!sessionStorage.languageAlertDismissed) {
 				// Set text from language file if it exists
 				import(`./i18n/${languageID}.js`).then(obj => {
 					langAlertLink.innerHTML = obj.default.pageIsInYourLanguage;
-				}).catch(() => langAlertLink.innerHTML = "This page is available in your language!");
+				}).catch(() => langAlertLink.innerHTML = "Cette page est disponible dans votre langue !");
 
 				updateLanguageAlert();
 				break;
