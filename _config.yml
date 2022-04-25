@@ -6,11 +6,11 @@ markdown_ext : "markdown,mkdown,mkdn,mkd,md,html"
 include      : [".well-known"]
 
 defaults:
-  - values:
-      layout: "default"
-      title: "SombrAbsol"
   - scope:
       path: "**/*.md"
+    values:
+      layout: "default"
+      title: "SombrAbsol"
 
 plugins:
   - "jekyll-github-metadata"
