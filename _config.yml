@@ -15,3 +15,20 @@ plugins:
 
 sass:
   sass_dir: _sass
+
+collections:
+  fr-FR:
+    output: true
+    permalink: /:path:output_ext
+  de-DE:
+    output: true
+  en-US:
+    output: true
+  es-ES:
+    output: true
+  it-IT:
+    output: true
+  ja-JP:
+    output: true
+  ko-KR:
+    output: true
