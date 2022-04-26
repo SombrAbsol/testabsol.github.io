@@ -49,11 +49,11 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:
   let ObjectiveLine="Objectif :"
   let WonderMailLine="Lettre Miracle :"
 </script>
-<script src="/assets/js/tools/PMD1/lettresos.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/sosmail.js" type="text/javascript">
 </script>
-<script src="/assets/js/tools/PMD1/donjobjets.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/dungitems.js" type="text/javascript">
 </script>
-<script src="/assets/js/tools/PMD1/ttexte.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/ftext.js" type="text/javascript">
 </script>
 <script src="/assets/js/tools/PMD1/diff.js" type="text/javascript">
 </script>
