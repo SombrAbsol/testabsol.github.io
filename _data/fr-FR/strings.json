@@ -7,5 +7,6 @@
 	"light": "Clair",
 	"published-with": "Publié avec <a href=\"https://pages.github.com\">GitHub Pages</a>, voir la <a href=\"https://github.com/$1\">la source</a> sur GitHub.",
 	"select-language": "Sélectionner la langue",
-	"source": "Source"
+	"source": "Source",
+	"toggle-navigation": "Basculer à la navigation"
 }
