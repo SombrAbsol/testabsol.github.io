@@ -3,7 +3,7 @@ title: Accueil
 description: Site Web de SombrAbsol
 ---
 
-# Bievenue !
+# Bienvenue !
 
 Allô ? Ici SombrAbsol à l'appareil !<br> Peu importe comment vous avez trouvé mon site, je vous souhaite la bienvenue !
 
