@@ -13,7 +13,7 @@ Regarding special characters:
 
 Source: [http://www.upokecenter.com/games/dungeon/guides/sosgen.php](https://web.archive.org/web/20150203043525/http://www.upokecenter.com/games/dungeon/guides/sosgen.php)<br><br>
 
-<script src="/assets/js/tools/PMD1/objets-en.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/items-en.js" type="text/javascript">
 </script>
 <script src="/assets/js/tools/PMD1/pokemon-en.js" type="text/javascript">
 </script>
