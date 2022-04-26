@@ -21,7 +21,7 @@ Source: [http://www.upokecenter.com/games/dungeon/guides/sosgen.php](https://web
   let ChoosePokemon="Please choose a Pokémon."
   let SpecialChars="Please avoid using special characters in the name."
 </script>
-<script src="/assets/js/tools/PMD1/lettresos.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/sosmail.js" type="text/javascript">
 </script>
 <script type="text/javascript">
   //<![CDATA[
