@@ -7,9 +7,9 @@ description: Générateur de Lettres Miracle (PDM1)
 Utilisez cet outil pour générer une Lettre Miracle.
 
 Concernant les caractères spéciaux :
-- Pour le symbole masculin « ♂ », utilisez à la place « # » ;
-- Pour le symbole féminin « ♀ », utilisez à la place « % » ;
-- Pour les points de suspension « … », utilisez à la place « . ».
+- Pour le symbole masculin `♂`, utilisez à la place `#`
+- Pour le symbole féminin `♀`, utilisez à la place `%`
+- Pour les points de suspension `…`, utilisez à la place `.`
 
 Il est tout à fait normal qu'en indiquant au générateur que vous voulez une Zone d'Accueil en récompense, celle-ci soit affichée comme étant un Passmuraille lors du décodage de la Lettre Miracle.<br><br>
 Source : [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https://web.archive.org/web/20141224065334/http://www.upokecenter.com/games/dungeon/guides/wondermail.php)<br><br>
