@@ -2,24 +2,24 @@
 title: SOS Mail Generator (PMD1)
 description: SOS Mail Generator (PMD1)
 ---
-# Pokémon Mystery Dungeon: Red/Blue Rescue Team
+# Pokémon Mystery Dungeon: Red and Blue Rescue Team
 ## SOS Mail Generator
 Use this tool to generate an SOS Mail. As soon as you have successfully completed the mission, enter the A-OK Mail password that you will receive in the [Mail Converter](aokmail) to get the Thank-You Mail password.
 
 Regarding special characters:
-- For the male symbol "♂", use instead "#" ;
-- For the feminine symbol "♀", use instead "%" ;
-- For the ellipsis "…", use instead ".".
+- For the male symbol `♂`, use instead `#`
+- For the feminine symbol `♀`, use instead `%`
+- For the ellipsis `…`, use instead `.`
 
 Source: [http://www.upokecenter.com/games/dungeon/guides/sosgen.php](https://web.archive.org/web/20150203043525/http://www.upokecenter.com/games/dungeon/guides/sosgen.php)<br><br>
 
-<script src="/assets/js/tools/PMD1/objets-fr.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/objets-en.js" type="text/javascript">
 </script>
-<script src="/assets/js/tools/PMD1/pokemon-fr.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/pokemon-en.js" type="text/javascript">
 </script>
 <script type="text/javascript">
-  let ChoosePokemon="Choisissez un Pokémon."
-  let SpecialChars="Évitez d'utiliser des caractères spéciaux dans le nom."
+  let ChoosePokemon="Please choose a Pokémon."
+  let SpecialChars="Please avoid using special characters in the name."
 </script>
 <script src="/assets/js/tools/PMD1/lettresos.js" type="text/javascript">
 </script>
@@ -228,26 +228,26 @@ function encsos(){
 
 //]]></script>
 
-<p>Pokémon à secourir :
+<p>Pokémon to rescue:
   <br>
   <script type="text/javascript">
     showpkmn("poke");
   </script>
   <br>
   <br>
-  Nom du Pokémon (dix lettres maximum) :
+  Pokémon's name (max. ten letters):
   <br>
   <input type="text" id="pokename" maxlength="10" size="10" />
   <br>
   <br>
-  Donjon :
+  Dungeon:
   <br>
   <script type="text/javascript">
     showdungeon("dungeon");
   </script>
   <br>
   <br>
-  Étage :
+  Floor:
   <br>
   <select id="floor">
     <option value="">
@@ -255,31 +255,31 @@ function encsos(){
   </select>
   <br>
   <br>
-  ID de la Lettre (optionnel) :
+  Mail ID (optional):
   <br>
   <input type="text" id="mailid" maxlength="4" size="4" />
   <br>
   <br>
-  Possibilités de sauvetages restantes :
+  Rescue chances:
   <br>
   <input type="text" id="chances" value="10" maxlength="2" size="2" />
   <br>
   <br>
-  <input type="button" value="Générer la Lettre S.O.S." onclick="genpass()" />
+  <input type="button" value="Generate SOS Mail" onclick="genpass()" />
   <br>
   <br>
-  Mot de passe de la Lettre S.O.S. :
+  SOS Mail Password:
   <br>
   <textarea id="sos" cols="30" rows="5">
   </textarea>
   <br>
   <script type="text/javascript">
     if(debug){
-      document.write('<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos()"/>')
+      document.write('<input type="button" value="Decode SOS Mail" onclick="decsos()"/>')
       <br>
       document.write('<textarea id="data" cols="30" rows="5"></textarea>')
       <br>
-      document.write('<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos()"/>')
+      document.write('<input type="button" value="Encode SOS Mail" onclick="encsos()"/>')
       <br>
     }
   </script>
