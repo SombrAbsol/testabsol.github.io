@@ -8,9 +8,9 @@ Utilisez cet outil pour générer une Lettre S.O.S. Dès que vous aurez réussi 
 dans le [convertisseur de Lettres](aokmail) pour obtenir le mot de passe de la Lettre Remerciement.
 
 Concernant les caractères spéciaux :
-- Pour le symbole masculin « ♂ », utilisez à la place « # » ;
-- Pour le symbole féminin « ♀ », utilisez à la place « % » ;
-- Pour les points de suspension « … », utilisez à la place « . ».
+- Pour le symbole masculin `♂`, utilisez à la place `#`
+- Pour le symbole féminin `♀`, utilisez à la place `%`
+- Pour les points de suspension `…`, utilisez à la place `.`
 
 Source : [http://www.upokecenter.com/games/dungeon/guides/sosgen.php](https://web.archive.org/web/20150203043525/http://www.upokecenter.com/games/dungeon/guides/sosgen.php)<br><br>
 
