@@ -422,5 +422,5 @@ var pokemon = [
     "Goinfrex",
     "Appât",
     "Statue",
-    "Rayquaza"
+    "Rayquaza (doublon)"
 ];
