@@ -418,7 +418,7 @@ var pokemon = [
 	"Icognito ?",
 	"Deoxys Angriffsform",
 	"Deoxys Verteidigungsform",
-	"Deoxys Initiativeform",
+	"Deoxys Speedform",
 	"Mampfaxo",
 	"Köder",
 	"Statue",
