@@ -420,7 +420,7 @@ var pokemon = [
     "Deoxys Forma Defensiva",
     "Deoxys Forma Velocidad",
     "Munchlax",
-    "Decoy",
-    "Statue",
+    "Señuelo",
+    "Estatua",
     "Rayquaza (duplicado)"
 ]
