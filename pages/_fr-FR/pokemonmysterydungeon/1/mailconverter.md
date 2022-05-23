@@ -205,7 +205,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
       f.aok.value=formatpass(datatopass(pass))
      }
      if(flags&2){
-      let itemidx=option(f.item)
+      let itemidx=option(document.getElementById("item"))
       pass[0]=5//Thank-You mail ID
       if(itemidx){
        pass[33]=1
@@ -217,26 +217,26 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
      return 1
     }
     
-    function genaok(f){
-     if(genmailex(f,f.sos.value,1,1)){
-      f.sos.value=formatpass(f.sos.value)
+    function genaok(){
+     if(genmailex(document.getElementById("sos.value"),1,1)){
+      f.sos.value=formatpass(document.getElementById("sos.value"))
      }
     }
     
-    function genaokty(f){
-     if(genmailex(f,f.sos.value,3,1)){
-      f.sos.value=formatpass(f.sos.value)
+    function genaokty(){
+     if(genmailex(document.getElementById("sos.value"),3,1)){
+      f.sos.value=formatpass(document.getElementById("sos.value"))
      }
     }
     
-    function genty(f){
-     if(genmailex(f,f.aok.value,2,4)){
-      f.aok.value=formatpass(f.aok.value)
+    function genty(){
+     if(genmailex(document.getElementById("aok.value"),2,4)){
+      f.aok.value=formatpass(document.getElementById("aok.value"))
      }
     }
     
-    function decsos(f){
-     let x=entrytopass(f.sos.value)
+    function decsos(){
+     let x=entrytopass(document.getElementById("sos.value"))
      let pass=[]
      if(!convertpass(x,pass)){
       alert(InvalidPassword)
@@ -249,7 +249,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
      }
     }
     
-    function encsos(f){
+    function encsos(){
      let pass=f.data.value.split(",")
      for(let i=0;i<pass.length;i++){
       pass[i]=parseInt(pass[i],16)
@@ -265,23 +265,23 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
 
 <p>Mot de passe de la Lettre S.O.S. :
     <br>
-    <textarea name="sos" cols="60" rows="5">
+    <textarea id="sos" cols="60" rows="5">
     </textarea>
     <br>
     <script type="text/javascript">
         <!--
         if(debug){
-            document.write(&#039;<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos(this.form)"/><br/>&#039;)
-            document.write(&#039;<textarea name="data" cols="60" rows="5"></textarea><br/>&#039;)
-            document.write(&#039;<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos(this.form)"/><br/>&#039;)
+            document.write(&#039;<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos()"/><br/>&#039;)
+            document.write(&#039;<textarea id="data" cols="60" rows="5"></textarea><br/>&#039;)
+            document.write(&#039;<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos()"/><br/>&#039;)
         }
         //-->
     </script>
-    <input type="button" value="Générer la Lettre O.K." onclick="genaok(this.form)" />
+    <input type="button" value="Générer la Lettre O.K." onclick="genaok()" />
     <br>
-    <input type="button" value="Générer la Lettre O.K. et Remerciement" onclick="genaokty(this.form)" /><br/><br/> Mot de passe de la Lettre O.K. :
+    <input type="button" value="Générer la Lettre O.K. et Remerciement" onclick="genaokty()" /><br/><br/> Mot de passe de la Lettre O.K. :
     <br>
-    <textarea name="aok" cols="60" rows="5">
+    <textarea id="aok" cols="60" rows="5">
     </textarea>
     <br>
     <br>
@@ -294,15 +294,15 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     </script>
     <br>
     <br>
-    <input type="button" value="Générer la Lettre Remerciement" onclick="genty(this.form)" />
+    <input type="button" value="Générer la Lettre Remerciement" onclick="genty()" />
     <br>
     <br>
     Mot de passe de la Lettre Remerciement :
     <br>
-    <textarea name="ty" cols="60" rows="5">
+    <textarea id="ty" cols="60" rows="5">
     </textarea><br>
     Données de la mission de sauvetage :
     <br>
-    <textarea name="mission" cols="60" rows="6">
+    <textarea id="mission" cols="60" rows="6">
     </textarea>
 </p>
