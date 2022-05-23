@@ -153,7 +153,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
      return clientstr+"\r\n"+placestr+"\r\n"+idstr+"\r\n"
     }
     
-    function genmailex(f,mail,flags,mailtype){
+    function genmailex(mail,flags,mailtype){
      let pass=[]
      let x=entrytopass(mail)
      if(x.length==0){
@@ -171,7 +171,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
        if(pass[0]==4){
         if(confirm(AOKMailEnteredInSOS)){
          flags=2;
-         f.aok.value=formatpass(x);
+         document.getElementById("aok.value")=formatpass(x);
         } else {
          return 0;
         }
@@ -183,7 +183,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
        if(pass[0]==1){
         if(confirm(SOSMailEnteredInAOK)){
          flags=1;
-         f.sos.value=formatpass(x);
+         document.getElementById("sos.value")=formatpass(x);
         } else {
          return 0;
         }
@@ -193,7 +193,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
        }
       }
      }
-     f.mission.value=decodemission(pass)
+     document.getElementById("mission.value")=decodemission(pass)
      if(flags&1){
       pass[0]=4//A-OK mail ID
       pass[40]=pass[36]
@@ -202,7 +202,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
       pass[43]=pass[39]
       pass[44]=pass[44]-1//rescue chances left
       //works even if line below is commented out
-      f.aok.value=formatpass(datatopass(pass))
+      document.getElementById("aok.value")=formatpass(datatopass(pass))
      }
      if(flags&2){
       let itemidx=option(document.getElementById("item"))
@@ -212,26 +212,26 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
        pass[34]=itemidx&0xFF
        pass[35]=(itemidx>>8)&0xFF
       }
-      f.ty.value=formatpass(datatopass(pass))
+      document.getElementById("ty.value")=formatpass(datatopass(pass))
      }
      return 1
     }
     
     function genaok(){
      if(genmailex(document.getElementById("sos.value"),1,1)){
-      f.sos.value=formatpass(document.getElementById("sos.value"))
+      document.getElementById("sos.value")=formatpass(document.getElementById("sos.value"))
      }
     }
     
     function genaokty(){
      if(genmailex(document.getElementById("sos.value"),3,1)){
-      f.sos.value=formatpass(document.getElementById("sos.value"))
+      document.getElementById("sos.value")=formatpass(document.getElementById("sos.value"))
      }
     }
     
     function genty(){
      if(genmailex(document.getElementById("aok.value"),2,4)){
-      f.aok.value=formatpass(document.getElementById("aok.value"))
+      document.getElementById("aok.value")=formatpass(document.getElementById("aok.value"))
      }
     }
     
@@ -242,22 +242,22 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
       alert(InvalidPassword)
      } else {
       x=datatopass(pass)
-      f.sos.value=formatpass(x)
+      document.getElementById("sos.value")=formatpass(x)
       if(debug){
-       f.data.value=tostr(pass)
+       document.getElementById("data.value")=tostr(pass)
       }
      }
     }
     
     function encsos(){
-     let pass=f.data.value.split(",")
+     let pass=document.getElementById("data.value.split")(",")
      for(let i=0;i<pass.length;i++){
       pass[i]=parseInt(pass[i],16)
      }
      x=datatopass(pass)
-     f.sos.value=formatpass(x)
+     document.getElementById("sos.value")=formatpass(x)
      if(debug){
-      f.data.value=tostr(pass)
+      document.getElementById("data.value")=tostr(pass)
      }
     }
     //]]>
