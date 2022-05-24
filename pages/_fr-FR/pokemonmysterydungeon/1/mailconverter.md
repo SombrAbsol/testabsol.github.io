@@ -16,7 +16,7 @@ Concernant les caractères spéciaux :
 
 Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://web.archive.org/web/20150118004601/http://www.upokecenter.com/games/dungeon/guides/sosmail.php)
 
-<script src="objets-fr.js">
+<script src="items-fr.js">
 </script>
 <script src="pokemon-fr.js">
 </script>
