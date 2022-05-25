@@ -189,82 +189,128 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
         writequestions("queslist");
         //-->
 </script>
-<div id="quesleft"></div>
-<div id="quesdiv"></div>
-<div id="quesstatus"></div>
-<div id="quesresult"></div>
+<div id="quesleft">
+</div>
+<div id="quesdiv">
+</div>
+<div id="quesstatus">
+</div>
+<div id="quesresult">
+</div>
 
 ### Natures
 <table>
     <tr>
-        <th>Nature</th>
-        <th>Garçon ♂</th>
-        <th>Fille ♀</th>
+        <th>Nature
+        </th>
+        <th>Garçon ♂
+        </th>
+        <th>Fille ♀
+        </th>
     </tr>
     <tr>
-        <td>Hardi</td>
-        <td>Salamèche</td>
-        <td>Pikachu</td>
+        <td>Hardi
+        </td>
+        <td>Salamèche
+        </td>
+        <td>Pikachu
+        </td>
     </tr>
     <tr>
-        <td>Docile</td>
-        <td>Bulbizarre</td>
-        <td>Germignon</td>
+        <td>Docile
+        </td>
+        <td>Bulbizarre
+        </td>
+        <td>Germignon
+        </td>
     </tr>
     <tr>
-        <td>Brave</td>
-        <td>Machoc</td>
-        <td>Salamèche</td>
+        <td>Brave
+        </td>
+        <td>Machoc
+        </td>
+        <td>Salamèche
+        </td>
     </tr>
     <tr>
-        <td>Jovial</td>
-        <td>Carapuce</td>
-        <td>Kaiminus</td>
+        <td>Jovial
+        </td>
+        <td>Carapuce
+        </td>
+        <td>Kaiminus
+        </td>
     </tr>
     <tr>
-        <td>Malin</td>
-        <td>Pikachu</td>
-        <td>Osselait</td>
+        <td>Malin
+        </td>
+        <td>Pikachu
+        </td>
+        <td>Osselait
+        </td>
     </tr>
     <tr>
-        <td>Naïf</td>
-        <td>Kaiminus</td>
-        <td>Evoli</td>
+        <td>Naïf
+        </td>
+        <td>Kaiminus
+        </td>
+        <td>Evoli
+        </td>
     </tr>
     <tr>
-        <td>Timide</td>
-        <td>Héricendre</td>
-        <td>Gobou</td>
+        <td>Timide
+        </td>
+        <td>Héricendre
+        </td>
+        <td>Gobou
+        </td>
     </tr>
     <tr>
-        <td>Pressé</td>
-        <td>Poussifeu</td>
-        <td>Skitty</td>
+        <td>Pressé
+        </td>
+        <td>Poussifeu
+        </td>
+        <td>Skitty
+        </td>
     </tr>
     <tr>
-        <td>Malpoli</td>
-        <td>Arcko</td>
-        <td>Poussifeu</td>
+        <td>Malpoli
+        </td>
+        <td>Arcko
+        </td>
+        <td>Poussifeu
+        </td>
     </tr>
     <tr>
-        <td>Calme</td>
-        <td>Gobou</td>
-        <td>Bulbizarre</td>
+        <td>Calme
+        </td>
+        <td>Gobou
+        </td>
+        <td>Bulbizarre
+        </td>
     </tr>
     <tr>
-        <td>Relax</td>
-        <td>Psykokwak</td>
-        <td>Carapuce</td>
+        <td>Relax
+        </td>
+        <td>Psykokwak
+        </td>
+        <td>Carapuce
+        </td>
     </tr>
     <tr>
-        <td>Solo</td>
-        <td>Osselait</td>
-        <td>Psykokwak</td>
+        <td>Solo
+        </td>
+        <td>Osselait
+        </td>
+        <td>Psykokwak
+        </td>
     </tr>
     <tr>
-        <td>Bizarre</td>
-        <td>Miaouss</td>
-        <td>Arcko</td>
+        <td>Bizarre
+        </td>
+        <td>Miaouss
+        </td>
+        <td>Arcko
+        </td>
     </tr>
 </table>
 
