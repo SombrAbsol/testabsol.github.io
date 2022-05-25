@@ -14,7 +14,6 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
 <script type="text/javascript" src="/assets/js/tools/PMD1/areas-fr.js">
 </script>
 <script type="text/javascript">
-    <!--
     let loc=self.location.href
     if(loc.charAt(loc.length-1)=="/"){
      self.location.replace(loc.substr(0,loc.length-1))
@@ -181,13 +180,9 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
       loadquestion(q,"quesdiv","question")
      }
     }
-    
-    //-->
 </script>
 <script type="text/javascript">
-    <!--
-        writequestions("queslist");
-        //-->
+    writequestions("queslist");
 </script>
 <div id="quesleft">
 </div>
