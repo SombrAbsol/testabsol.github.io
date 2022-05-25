@@ -16,9 +16,9 @@ Concernant les caractères spéciaux :
 
 Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://web.archive.org/web/20150118004601/http://www.upokecenter.com/games/dungeon/guides/sosmail.php)
 
-<script src="items-fr.js">
+<script src="/assets/js/tools/PMD1/items-fr.js">
 </script>
-<script src="pokemon-fr.js">
+<script src="/assets/js/tools/PMD1/pokemon-fr.js">
 </script>
 <script type="text/javascript">
     let PasswordTooShort="Le mot de passe est incorrect car il contient moins de cinquente-quatre caractères. Ressaisissez-le tel qu'il apparaît dans le jeu puis réessayez."
