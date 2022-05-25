@@ -184,15 +184,15 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
     
     //-->
 </script>
-    <script type="text/javascript">
-        <!--
+<script type="text/javascript">
+    <!--
         writequestions("queslist");
         //-->
-    </script>
-    <div id="quesleft"></div>
-    <div id="quesdiv"></div>
-    <div id="quesstatus"></div>
-    <div id="quesresult"></div>
+</script>
+<div id="quesleft"></div>
+<div id="quesdiv"></div>
+<div id="quesstatus"></div>
+<div id="quesresult"></div>
 
 ### Natures
 <table>
@@ -267,5 +267,6 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
         <td>Arcko</td>
     </tr>
 </table>
-<h3>Partenaires</h3>
-<p>La liste complète des partenaires comprend Bulbizarre, Salamèche, Carapuce, Pikachu, Germignon, Héricendre, Kaiminus, Arcko, Poussifeu et Gobou. Selon le Pokémon incarné par le joueur, cette liste peut changer ; toutes les espèces qui partagent un type avec/correspondent à l'espèce du Pokémon du joueur sont retirées de la liste.</p>
+
+### Partenaires
+La liste complète des partenaires comprend Bulbizarre, Salamèche, Carapuce, Pikachu, Germignon, Héricendre, Kaiminus, Arcko, Poussifeu et Gobou. Selon le Pokémon incarné par le joueur, cette liste peut changer ; toutes les espèces qui correspondent à l'espèce du Pokémon du joueur, ou partagent un type avec, sont retirées de la liste.
