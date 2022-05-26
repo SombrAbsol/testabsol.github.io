@@ -279,9 +279,9 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     }
     */
   </script>
-  <input type="button" value="Générer la Lettre S.O.S." onclick="genaok(this.form)" />
+  <input type="button" value="Générer la Lettre O.K." onclick="genaok(this.form)" />
   <br>
-  <input type="button" value="Générer les Lettres S.O.S. et Remerciement" onclick="genaokty()" />
+  <input type="button" value="Générer les Lettres O.K. et Remerciement" onclick="genaokty()" />
   <br>
   <br>
   Mot de passe de la Lettre O.K. :
