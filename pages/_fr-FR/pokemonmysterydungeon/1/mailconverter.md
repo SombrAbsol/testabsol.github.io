@@ -201,7 +201,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
       document.getElementById("aok").value=formatpass(datatopass(pass))
     }
     if(flags&2){
-      var itemidx=option(document.getElementById("item"))
+      let itemidx=option(document.getElementById("item"))
       pass[0]=5//Thank-You mail ID
       if(itemidx){
         pass[33]=1
@@ -228,8 +228,8 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     }
   }
   function decsos(){
-    var x=entrytopass(document.getElementById("sos").value)
-    var pass=[]
+    let x=entrytopass(document.getElementById("sos").value)
+    let pass=[]
     if(!convertpass(x,pass)){
       alert(InvalidPassword)
     }
@@ -242,8 +242,8 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     }
   }
   function encsos(){
-    var pass=document.getElementById("data").value.split(",")
-    for(var i=0;i<pass.length;i++){
+    let pass=document.getElementById("data").value.split(",")
+    for(let i=0;i<pass.length;i++){
       pass[i]=parseInt(pass[i],16)
     }
     x=datatopass(pass)
