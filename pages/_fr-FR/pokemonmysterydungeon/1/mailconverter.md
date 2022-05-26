@@ -44,7 +44,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
 <script type="text/javascript">
   //<![CDATA[
 
-  var AboveGround=[
+  let AboveGround=[
     0,0,1,1,0,1,1,1,0,1,1,1,1,1,1,0,0,1,1,0,0,0,
     1,0,0,0,0,0,0,1,0,1,0,1,1,1,0,1,0,0,0,0,0,0,
     0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,1,0
@@ -55,19 +55,19 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
   }
   function showitems(name){
     document.write("<select id=\""+name+"\">");
-    for(var i=0;i<items.length;i++){
+    for(let i=0;i<items.length;i++){
       document.write("<option value=\"\">"+items[i]+" ["+i.toString(16)+"]</option>");
     }
     document.write("</select>");
   }
   function showpokemon(name){
     document.write("<select id=\""+name+"\">");
-    for(var i=0;i<pokemon.length;i++){
+    for(let i=0;i<pokemon.length;i++){
       document.write("<option value=\"\">"+pokemon[i]+"</option>");
     }
     document.write("</select>");
   }
-  var debug=0
+  let debug=0
   function entrytopass(x){
     x=x.replace(/[\n\s\r\'\"]/g,"")
       .replace(/[\u2642]/g,"#")
@@ -99,13 +99,13 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
       +x.substr(41,8)+" "
       +x.substr(49,5)+"\r\n"
   }
-  var baditems="EDEEEFB1E924D8D2B0DC323334C2ECF0"
+  let baditems="EDEEEFB1E924D8D2B0DC323334C2ECF0"
   function option(x){
     return parseInt(x.value)
   }
   function isbaditem(x){
     if(x>=0xF0)return 0
-    for(var i=0;i<baditems.length/2;i++){
+    for(let i=0;i<baditems.length/2;i++){
       if(x==c2c(baditems,i))
         return 1
         }
@@ -113,7 +113,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
   }
   function showrewards(name){
     document.write("<select id=\""+name+"\">");
-    for(var i=0;i<items.length;i++){
+    for(let i=0;i<items.length;i++){
       if(!isbaditem(i)){
         document.write("<option value=\""+i+"\">"+items[i]
                        //      +" ["+i.toString(16)+"]"
@@ -123,28 +123,28 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     document.write("</select>");
   }
   function decodemission(pass){
-    var diffstring="EDCBAS*"
-    var client=pass[12]|(pass[13]<<8)
-    var clientname=""
-    for(var i=0;i<10;i++){
+    let diffstring="EDCBAS*"
+    let client=pass[12]|(pass[13]<<8)
+    let clientname=""
+    for(let i=0;i<10;i++){
       if(pass[20+i]==0)break
       clientname+=String.fromCharCode(pass[20+i])
         }
-    var clientstr=ClientLine+" "+clientname+" ("+pokemon[client]+")"
-    var placestr=PlaceLine+" "+dungeons[pass[4]]+" "
+    let clientstr=ClientLine+" "+clientname+" ("+pokemon[client]+")"
+    let placestr=PlaceLine+" "+dungeons[pass[4]]+" "
     if(IsAboveGround(pass[4]))
       placestr+=AboveGroundFloor.replace("XX",pass[5])
       else
         placestr+=BasementFloor.replace("XX",pass[5])
-        var id=pass[16]|(pass[17]<<8)
-        var idstr=IDLine+" "+(id%10000)+"\r\n"
+        let id=pass[16]|(pass[17]<<8)
+        let idstr=IDLine+" "+(id%10000)+"\r\n"
         +RescueChancesLine+" "+pass[44]+"\r\n"
         +DifficultyLine+" "+diffstring.charAt(GetDifficulty(0,pass[4],pass[5]))
         return clientstr+"\r\n"+placestr+"\r\n"+idstr+"\r\n"
   }
   function genmailex(mail,flags,mailtype){
-    var pass=[]
-    var x=entrytopass(mail)
+    let pass=[]
+    let x=entrytopass(mail)
     if(x.length==0){
       alert(NoPassword)
       return 0
