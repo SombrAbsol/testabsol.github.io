@@ -14,7 +14,7 @@ Concernant les caractères spéciaux :
 - Pour le symbole féminin `♀`, utilisez à la place `%`
 - Pour les points de suspension `…`, utilisez à la place `.`
 
-Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://web.archive.org/web/20150118004601/http://www.upokecenter.com/games/dungeon/guides/sosmail.php)
+Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://web.archive.org/web/20150118004601/http://www.upokecenter.com/games/dungeon/guides/sosmail.php)<br><br>
 
 <script src="/assets/js/tools/PMD1/items-fr.js" type="text/javascript">
 </script>
