@@ -21,7 +21,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
 <script src="/assets/js/tools/PMD1/pokemon-fr.js" type="text/javascript">
 </script>
 <script type="text/javascript">
-  let PasswordTooShort="Le mot de passe est incorrect car il contient moins de cinquente-quatre caractères. Ressaisissez-le tel qu'il apparaît dans le jeu puis réessayez."
+  let PasswordTooShort="Le mot de passe est incorrect car il contient moins de cinquante-quatre caractères. Ressaisissez-le tel qu'il apparaît dans le jeu puis réessayez."
   let NoPassword="Aucun mot de passe n'a été entré."
   let InvalidPasswordLong="Le mot de passe est incorrect. Ressaisissez-le puis réessayez."
   let NotSOSMail="Le mot de passe saisi n'est pas celui d'une Lettre S.O.S."
