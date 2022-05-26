@@ -265,8 +265,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
 
 <p>Mot de passe de la Lettre S.O.S. :
     <br>
-    <textarea id="sos" cols="60" rows="5">
-    </textarea>
+    <textarea id="sos" cols="60" rows="5"></textarea>
     <br>
     <script type="text/javascript">
         <!--
@@ -284,8 +283,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     <br>
     Mot de passe de la Lettre O.K. :
     <br>
-    <textarea id="aok" cols="60" rows="5">
-    </textarea>
+    <textarea id="aok" cols="60" rows="5"></textarea>
     <br>
     <br>
     Objet joint à la Lettre Remerciement (optionnel) :
@@ -300,12 +298,10 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     <br>
     Mot de passe de la Lettre Remerciement :
     <br>
-    <textarea id="ty" cols="60" rows="5">
-    </textarea>
+    <textarea id="ty" cols="60" rows="5"></textarea>
     <br>
     <br>
     Données de la mission de sauvetage :
     <br>
-    <textarea id="mission" cols="60" rows="6">
-    </textarea>
+    <textarea id="mission" cols="60" rows="6"></textarea>
 </p>
