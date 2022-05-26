@@ -291,9 +291,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     Objet joint à la Lettre Remerciement (optionnel) :
     <br>
     <script type="text/javascript">
-        <!--
         showrewards("items")
-        //-->
     </script>
     <br>
     <br>
@@ -303,7 +301,9 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     Mot de passe de la Lettre Remerciement :
     <br>
     <textarea id="ty" cols="60" rows="5">
-    </textarea><br>
+    </textarea>
+    <br>
+    <br>
     Données de la mission de sauvetage :
     <br>
     <textarea id="mission" cols="60" rows="6">
