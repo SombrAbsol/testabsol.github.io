@@ -267,44 +267,44 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
 </script>
 
 <p>Mot de passe de la Lettre S.O.S. :
-    <br>
-    <textarea id="sos" cols="30" rows="5"></textarea>
-    <br>
-    <script type="text/javascript">
-        /*
-            if(debug){
-                document.write(&#039;<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos()"/><br>&#039;)
-                document.write(&#039;<textarea id="data" cols="60" rows="5"></textarea><br>&#039;)
-                document.write(&#039;<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos()"/><br>&#039;)
-            }
-        */
-    </script>
-    <input type="button" value="Générer la Lettre O.K." onclick="genaok()" />
-    <br>
-    <input type="button" value="Générer la Lettre O.K. et Remerciement" onclick="genaokty()" />
-    <br>
-    <br>
-    Mot de passe de la Lettre O.K. :
-    <br>
-    <textarea id="aok" cols="30" rows="5"></textarea>
-    <br>
-    <br>
-    Objet joint à la Lettre Remerciement (optionnel) :
-    <br>
-    <script type="text/javascript">
-        showrewards("items")
-    </script>
-    <br>
-    <br>
-    <input type="button" value="Générer la Lettre Remerciement" onclick="genty()" />
-    <br>
-    <br>
-    Mot de passe de la Lettre Remerciement :
-    <br>
-    <textarea id="ty" cols="30" rows="5"></textarea>
-    <br>
-    <br>
-    Données de la mission de sauvetage :
-    <br>
-    <textarea id="mission" cols="30" rows="6"></textarea>
+  <br>
+  <textarea id="sos" cols="30" rows="5"></textarea>
+  <br>
+  <script type="text/javascript">
+    /*
+    if (debug) {
+      document.write('<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos()"/><br>')
+      document.write('<textarea id="data" cols="30" rows="6"></textarea><br>')
+      document.write('<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos()"/><br>')
+    }
+    */
+  </script>
+  <input type="button" value="Générer la Lettre S.O.S." onclick="genaok(this.form)" />
+  <br>
+  <input type="button" value="Générer les Lettres S.O.S. et Remerciement" onclick="genaokty()" />
+  <br>
+  <br>
+  Mot de passe de la Lettre O.K. :
+  <br>
+  <textarea id="aok" cols="30" rows="5"></textarea>
+  <br>
+  <br>
+  Objet joint à la Lettre Remerciement (optionnel) :
+  <br>
+  <script type="text/javascript">
+    showrewards("item")
+  </script>
+  <br>
+  <br>
+  <input type="button" value="Générer la Lettre Remerciement" onclick="genty(this.form)" />
+  <br>
+  <br>
+  Mot de passe de la Lettre Remerciement :
+  <br>
+  <textarea id="ty" cols="30" rows="5"></textarea>
+  <br>
+  <br>
+  Données de la mission de sauvetage :
+  <br>
+  <textarea id="mission" cols="30" rows="6"></textarea>
 </p>
