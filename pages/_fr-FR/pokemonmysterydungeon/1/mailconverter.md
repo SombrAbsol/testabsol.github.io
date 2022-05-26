@@ -16,30 +16,30 @@ Concernant les caractères spéciaux :
 
 Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://web.archive.org/web/20150118004601/http://www.upokecenter.com/games/dungeon/guides/sosmail.php)
 
-<script src="/assets/js/tools/PMD1/items-fr.js">
+<script src="/assets/js/tools/PMD1/items-fr.js" type="text/javascript">
 </script>
-<script src="/assets/js/tools/PMD1/pokemon-fr.js">
+<script src="/assets/js/tools/PMD1/pokemon-fr.js" type="text/javascript">
 </script>
 <script type="text/javascript">
-    let PasswordTooShort="Le mot de passe est incorrect car il contient moins de cinquente-quatre caractères. Ressaisissez-le tel qu'il apparaît dans le jeu puis réessayez."
-    let NoPassword="Aucun mot de passe n'a été entré."
-    let InvalidPasswordLong="Le mot de passe est incorrect. Ressaisissez-le puis réessayez."
-    let NotSOSMail="Le mot de passe saisi n'est pas celui d'une Lettre S.O.S."
-    let NotAOKMail="Le mot de passe saisi n'est pas celui d'une Lettre O.K."
-    let SOSMailEnteredInAOK="Le mot de passe saisi semble être celui d'une Lettre S.O.S. et non d'une Lettre O.K.  Voulez-vous générer une Lettre O.K. à partir de ce mot de passe ? Si oui, sélectionnez OK."
-    let AOKMailEnteredInSOS="Le mot de passe saisi semble être celui d'une Lettre O.K. et non d'une Lettre S.O.S.  Voulez-vous générer une Lettre Remeciement à partir de ce mot de passe ? Si oui, sélectionnez OK."
-    let BasementFloor="E. -XX"
-    let AboveGroundFloor="E. XX"
-    let InvalidPassword="Le mot de passe est incorrect."
-    let DifficultyLine="Difficulté :"
-    let IDLine="ID :"
-    let PlaceLine="Lieu :"
-    let ClientLine="Client :"
-    let RescueChancesLine="Possibilités de sauvetage restantes :"
+  let PasswordTooShort="Le mot de passe est incorrect car il contient moins de cinquente-quatre caractères. Ressaisissez-le tel qu'il apparaît dans le jeu puis réessayez."
+  let NoPassword="Aucun mot de passe n'a été entré."
+  let InvalidPasswordLong="Le mot de passe est incorrect. Ressaisissez-le puis réessayez."
+  let NotSOSMail="Le mot de passe saisi n'est pas celui d'une Lettre S.O.S."
+  let NotAOKMail="Le mot de passe saisi n'est pas celui d'une Lettre O.K."
+  let SOSMailEnteredInAOK="Le mot de passe saisi semble être celui d'une Lettre S.O.S. et non d'une Lettre O.K. Voulez-vous générer une Lettre O.K. à partir de ce mot de passe ? Si oui, sélectionnez OK."
+  let AOKMailEnteredInSOS="Le mot de passe saisi semble être celui d'une Lettre O.K. et non d'une Lettre S.O.S. Voulez-vous générer une Lettre Remeciement à partir de ce mot de passe ? Si oui, sélectionnez OK."
+  let BasementFloor="E. -XX"
+  let AboveGroundFloor="E. XX"
+  let InvalidPassword="Le mot de passe est incorrect."
+  let DifficultyLine="Difficulté :"
+  let IDLine="ID :"
+  let PlaceLine="Lieu :"
+  let ClientLine="Client :"
+  let RescueChancesLine="Possibilités de sauvetage restantes :"
 </script>
-<script src="/assets/js/tools/PMD1/sosmail.js">
+<script src="/assets/js/tools/PMD1/sosmail.js" type="text/javascript">
 </script>
-<script src="/assets/js/tools/PMD1/diff.js">
+<script src="/assets/js/tools/PMD1/diff.js" type="text/javascript">
 </script>
 <script type="text/javascript">
   //<![CDATA[
