@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        SOS to A-OK Mail Converter (Rescue Team)
+    </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Syphist's PMD Generator Archives">
+    <meta name="keywords" content="syphist,games,pokemon,mystery,dungeon">
+    <meta name="author" content="Syphist">
+
+    <!-- Opengraph -->
+    <meta property="og:image" content="https://i.syphist.com/sanic.png" />
+    <meta property="og:title" content="Syphist's SOS to A-OK Mail Converter (Rescue Team) Archive" />
+    <meta property="og:site_name" content="Syphist's Website" />
+    <meta property="og:description" content="An archive of the password converter for SOS to AOK Mail for Pokemon Mystery Dungeon Red and Blue Rescue Team." />
+    <meta property="og:locale" content="en_US" />
+
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="../../favicon.png" />
+
+    <!-- Congrats, you are a 1337 h4x0r!1!!1one1!1!11!!! -->
+
+    <!-- Bootstrap -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="/bootstrap-prod-01.css">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <script src="items-en.js" type="text/javascript"></script>
+    <script src="pokemon-en.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var PasswordTooShort="The password was invalid because it contained fewer than 54 characters. Please re-enter the password as it appears in the game and try again."
+        var NoPassword="No password was entered."
+        var InvalidPasswordLong="The password was invalid.  Please re-enter the password and try again."
+        var NotSOSMail="The password given was not an SOS Mail password."
+        var NotAOKMail="The password given was not an A-OK Mail password."
+        var SOSMailEnteredInAOK="The password given appears to be an SOS Mail password instead of an A-OK Mail password.  Do you want to generate an A-OK Mail from this password? If you do, select OK."
+        var AOKMailEnteredInSOS="The password given appears to be an A-OK Mail password instead of an SOS Mail password.  Do you want to generate a Thank-You Mail from this password? If you do, select OK."
+        var BasementFloor="BXXF"
+        var AboveGroundFloor="XXF"
+        var InvalidPassword="The password is invalid."
+        var DifficultyLine="Difficulty:"
+        var IDLine="ID:"
+        var PlaceLine="Place:"
+        var ClientLine="Client:"
+        var RescueChancesLine="Rescue chances:"
+    </script>
+    <script src="sosmail.js" type="text/javascript"></script>
+    <script src="diff.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        
+        var AboveGround=[
+        0,0,1,1,0,1,1,1,0,1,1,1,1,1,1,0,0,1,1,0,0,0,
+        1,0,0,0,0,0,0,1,0,1,0,1,1,1,0,1,0,0,0,0,0,0,
+        0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,1,0
+        ]
+        function IsAboveGround(d){
+         if(d>=AboveGround.length)return 1
+         return AboveGround[d]
+        }
+        function showitems(name){
+         document.write("<select name=\""+name+"\">");
+         for(var i=0;i<items.length;i++){
+          document.write("<option value=\"\">"+items[i]+" ["+i.toString(16)+"]</option>");  
+         } 
+         document.write("</select>");
+        }
+        
+        function showpokemon(name){
+         document.write("<select name=\""+name+"\">");
+         for(var i=0;i<pokemon.length;i++){
+          document.write("<option value=\"\">"+pokemon[i]+"</option>");  
+         } 
+         document.write("</select>");
+        }
+        
+        
+        var debug=0
+        
+        function entrytopass(x){
+         x=x.replace(/[\n\s\r\'\"]/g,"")
+                 .replace(/[\u2642]/g,"#")
+                 .replace(/[\u2640]/g,"%")
+                 .replace(/[\{\(\[]m([a\u00e2]le?)?[\)\]\}]/gi,"#")
+                 .replace(/[\{\(\[]f(em(ale|elle)?)?[\)\]\}]/gi,"%")
+                 .replace(/[\{\(\[]w(eib(l(ich)?)?)?[\)\]\}]/gi,"%")
+                 .replace(/[\{\(\[]m(acho)?[\)\]\}]/gi,"#")
+                 .replace(/[\{\(\[]h(em(bra)?)?[\)\]\}]/gi,"%")
+                 .replace(/[\{\(\[]m[a\u00e4\u00c4]nn(l(ich)?)?[\)\]\}]/gi,"#")
+                 .replace(/[\{\(\[]\.\.?\.?[\)\]\}]/g,".")
+                 .replace(/[\{\(\[][\u2026][\)\]\}]/g,".")
+                 .replace(/[\u2026]/g,".")
+                 .toUpperCase()
+         testx=x.replace(/\.\.\./g,".")
+         if(testx.length==54)
+          x=testx
+         return x
+        }
+        
+        function formatpass(x){
+         x=entrytopass(x)
+         return x.substr(0,5)+" "
+               +x.substr(5,8)+" "
+               +x.substr(13,5)+"\r\n"
+               +x.substr(18,5)+" "
+               +x.substr(23,8)+" "
+               +x.substr(31,5)+"\r\n"
+               +x.substr(36,5)+" "
+               +x.substr(41,8)+" "
+               +x.substr(49,5)+"\r\n"
+        }
+        
+        var baditems="EDEEEFB1E924D8D2B0DC323334C2ECF0"
+        
+        function option(x){
+         return parseInt(x[x.selectedIndex].value)
+        }
+        
+        function isbaditem(x){
+         if(x>=0xF0)return 0
+         for(var i=0;i<baditems.length/2;i++){
+          if(x==c2c(baditems,i))
+           return 1
+         }
+         return 0
+        }
+        
+        function showrewards(name){
+         document.write("<select name=\""+name+"\" class=\"form-control\" style=\"max-width: 20%;\">");
+         for(var i=0;i<items.length;i++){
+          if(!isbaditem(i)){
+           document.write("<option value=\""+i+"\">"+items[i]
+        //      +" ["+i.toString(16)+"]"
+              +"</option>");  
+          }
+         } 
+         document.write("</select>");
+        }
+        
+        function decodemission(pass){
+         var diffstring="EDCBAS*"
+         var client=pass[12]|(pass[13]<<8)
+         var clientname=""
+         for(var i=0;i<10;i++){
+          if(pass[20+i]==0)break
+          clientname+=String.fromCharCode(pass[20+i])
+         }
+         var clientstr=ClientLine+" "+clientname+" ("+pokemon[client]+")"
+         var placestr=PlaceLine+" "+dungeons[pass[4]]+" "
+         if(IsAboveGround(pass[4]))
+          placestr+=AboveGroundFloor.replace("XX",pass[5])
+         else
+          placestr+=BasementFloor.replace("XX",pass[5])
+         var id=pass[16]|(pass[17]<<8)
+         var idstr=IDLine+" "+(id%10000)+"\r\n"
+                  +RescueChancesLine+" "+pass[44]+"\r\n"
+                  +DifficultyLine+" "+diffstring.charAt(GetDifficulty(0,pass[4],pass[5]))
+         return clientstr+"\r\n"+placestr+"\r\n"+idstr+"\r\n"
+        }
+        
+        function genmailex(f,mail,flags,mailtype){
+         var pass=[]
+         var x=entrytopass(mail)
+         if(x.length==0){
+          alert(NoPassword)
+          return 0
+         } if(x.length<54){
+          alert(PasswordTooShort)
+          return 0
+         }
+         if(!convertpass(x,pass)){
+          alert(InvalidPasswordLong)
+          return 0
+         } else if(pass[0]!=mailtype) {
+          if(mailtype==1){
+           if(pass[0]==4){
+            if(confirm(AOKMailEnteredInSOS)){
+             flags=2;
+             f.aok.value=formatpass(x);
+            } else {
+             return 0;
+            }
+           } else {
+            alert(NotSOSMail)
+            return 0
+           }
+          }else if(mailtype==4){
+           if(pass[0]==1){
+            if(confirm(SOSMailEnteredInAOK)){
+             flags=1;
+             f.sos.value=formatpass(x);
+            } else {
+             return 0;
+            }
+           } else {
+            alert(NotAOKMail)
+            return 0
+           }
+          }
+         }
+         f.mission.value=decodemission(pass)
+         if(flags&1){
+          pass[0]=4//A-OK mail ID
+          pass[40]=pass[36]
+          pass[41]=pass[37]
+          pass[42]=pass[38]
+          pass[43]=pass[39]
+          pass[44]=pass[44]-1//rescue chances left
+          //web.archive.org/web/20080913124421/http://works even if line below is commented out
+          f.aok.value=formatpass(datatopass(pass))
+         }
+         if(flags&2){
+          var itemidx=option(f.item)
+          pass[0]=5//Thank-You mail ID
+          if(itemidx){
+           pass[33]=1
+           pass[34]=itemidx&0xFF
+           pass[35]=(itemidx>>8)&0xFF
+          }
+          f.ty.value=formatpass(datatopass(pass))
+         }
+         return 1
+        }
+        
+        function genaok(f){
+         if(genmailex(f,f.sos.value,1,1)){
+          f.sos.value=formatpass(f.sos.value)
+         }
+        }
+        
+        function genaokty(f){
+         if(genmailex(f,f.sos.value,3,1)){
+          f.sos.value=formatpass(f.sos.value)
+         }
+        }
+        
+        function genty(f){
+         if(genmailex(f,f.aok.value,2,4)){
+          f.aok.value=formatpass(f.aok.value)
+         }
+        }
+        
+        function decsos(f){
+         var x=entrytopass(f.sos.value)
+         var pass=[]
+         if(!convertpass(x,pass)){
+          alert(InvalidPassword)
+         } else {
+          x=datatopass(pass)
+          f.sos.value=formatpass(x)
+          if(debug){
+           f.data.value=tostr(pass)
+          }
+         }
+        }
+        
+        function encsos(f){
+         var pass=f.data.value.split(",")
+         for(var i=0;i<pass.length;i++){
+          pass[i]=parseInt(pass[i],16)
+         }
+         x=datatopass(pass)
+         f.sos.value=formatpass(x)
+         if(debug){
+          f.data.value=tostr(pass)
+         }
+        }
+        //]]>
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="position: fixed;width:100%;z-index: 999;">
+        <a href="/"><img style="width:32px;" src="https://i.syphist.com/saniclogo.png" alt="Sanic"></a><a style="font-family: 'Comic Sans MS',sans-serif;" class="navbar-brand" href="/"> Syphist's Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" id="home">
+                    <a class="nav-link" href="/">Home
+          <span class="sr-only">(current)</span>
+        </a>
+                </li>
+                <li class="nav-item dropdown" id="pmd">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">PMD Generators</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/pmd/" id="pmdhome">PMD Generator Home</a>
+                        <div class="dropdown-divider"></div>
+                        <p class="dropdown-item" href="#" style="color:#fff;margin-bottom:1px;">Rescue Team</p>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/pmd/rt/wondermail.php" id="pmdrtwm">Wonder Mail</a>
+                        <a class="dropdown-item" href="/pmd/rt/sosgen.php" id="pmdrtsos">SOS Mail</a>
+                        <a class="dropdown-item" href="/pmd/rt/aok.php" id="pmdrtaok">AOK Mail</a>
+                        <div class="dropdown-divider"></div>
+                        <p class="dropdown-item" href="#" style="color:#fff;margin-bottom:1px;">Explorers</p>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/pmd/explorers/wondermail.php" id="pmdexwm">Wonder Mail</a>
+                        <a class="dropdown-item" href="/pmd/wms/" id="pmdexwms">Wonder Mail S</a>
+                        <a class="dropdown-item" href="/pmd/explorers/aok.php" id="pmdexaok">SOS to AOK Mail</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" id="games">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Games</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/games/" id="gameshome">Games Home</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/games/pumpkin.php" id="gamespumkin">Hungry Pumpkin</a>
+                        <a class="dropdown-item" href="/games/waifu.php" id="gameswaifu">Waifu Creator</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" id="profiles">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Profiles</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://twitter.com/Syphist">Twitter</a>
+                        <a class="dropdown-item" href="https://github.com/syphist">GitHub</a>
+                        <a class="dropdown-item" href="https://www.youtube.com/channel/UCXIvMNbrA4RTTAJknoAKALw">YouTube</a>
+                        <a class="dropdown-item" href="https://www.twitch.tv/syphist">Twitch</a>
+                        <a class="dropdown-item" href="https://osu.ppy.sh/users/1535211">osu!</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" id="mods">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Mods</a>
+                    <div class="dropdown-menu">
+                        <p class="dropdown-item" href="#" style="color:#fff;margin-bottom:1px;">Starbound</p>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://steamcommunity.com/sharedfiles/filedetails/?id=762292437">Syphist's Song Pack</a>
+                        <a class="dropdown-item" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1771590965">Better Gas Giants</a>
+                        <a class="dropdown-item" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1801520140">Vanilla Glasses in Cutebound</a>
+                    </div>
+                </li>
+                <li class="nav-item" id="discord">
+                    <a class="nav-link" href="/discord">Discord Server
+          <span class="sr-only">(current)</span>
+        </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <div class="jumbotron" style="width: 75%; margin: auto; margin-top:10%;">
+        <h1 style="text-align: center;">Pokemon Mystery Dungeon - SOS Mail Generator</h1>
+        <br /><br />
+        <div class="card text-white bg-primary mb-3">
+            <h5 class="card-header">Copyright</h5>
+            <div class="card-body">
+                <ul style="margin: 0 0 0.5em;padding: 0.5em 1em;padding-left: 1%;vertical-align: middle;">
+                    <li>Written by <a href="https://web.archive.org/web/20070701084313/http://www.upokecenter.com:80/mail.php">Peter O.</a> of <a href="https://web.archive.org/web/20080913124315/http://www.upokecenter.com:80/">The Ultimate Pokemon Center</a>.</li>
+                    <li>(C) 2007 Peter O.</li>
+                    <li>The original can be found at <a href="https://web.archive.org/web/20080913124421/http://www.upokecenter.com/games/dungeon/guides/sosmail.php">http://www.upokecenter.com/games/dungeon/guides/wondermail.php</a>.</li>
+                </ul>
+            </div>
+        </div>
+        <br />
+        <p>If none of your friends own Pokemon Mystery Dungeon, it is still possible to rescue yourself with the help of this tool.</p>
+        <p>Using this tool, you can generate an A-OK and Thank-You Mail password from an SOS Mail password, or a Thank-You Mail password from an A-OK Mail password. Note also the following.</p>
+        <ul>
+            <li>For the male sign (&#x2642;), &quot;#&quot; is used instead.</li>
+            <li>For the female sign (&#x2640;), &quot;%&quot; is used instead.</li>
+            <li>For the ellipsis (&#x2026;), &quot;.&quot; is used instead.</li>
+        </ul>
+        <p><span style="color: #C02020;">DISCLAIMER:</span> I did not make this page, I have only archived it.</p>
+        <!-- I am REALLY REALLY tired of unindented HTML -->
+        <form name="s" action="javascript:void(null)">
+            <div class="card text-white bg-primary mb-3">
+                <h5 class="card-header">SOS to A-OK</h5>
+                <div class="card-body">
+                    <p>SOS Mail Password:<br/>
+                        <textarea name="sos" class="form-control" cols="30" rows="5" style="max-width: 40%;"></textarea><br/>
+                        <!-- <script type="text/javascript">
+if(debug){
+ document.write('<input type="button" value="Decode SOS Mail" onclick="decsos(this.form)"/><br/>')
+ document.write('<textarea name="data" cols="30" rows="6" style="max-width: 40%;"></textarea><br/>')
+ document.write('<input type="button" value="Encode SOS Mail" onclick="encsos(this.form)"/><br/>')
+}
+</script> //-->
+                        <input type="button" value="Generate A-OK Mail" onclick="genaok(this.form)" class="btn btn-primary" /><br/>
+                        <input type="button" value="Generate A-OK and Thank-You Mail" onclick="genaokty(this.form)" class="btn btn-primary" /><br/><br /> A-OK Mail Password:<br/>
+                        <textarea name="aok" class="form-control" cols="30" rows="5" style="max-width: 40%;"></textarea><br/> Item to send to Thank-You Mail (optional):<br/>
+                        <script type="text/javascript">
+                            showrewards("item")
+                        </script><br/>
+                        <input type="button" value="Generate Thank-You Mail" onclick="genty(this.form)" class="btn btn-primary" /><br/>
+                    </p>
+                </div>
+            </div>
+            <br />
+            <form name="s" action="javascript:void(null)">
+                <div class="card text-white bg-primary mb-3">
+                    <h5 class="card-header">Thank-You and Rescue Mission Data</h5>
+                    <div class="card-body">
+                        <p>Thank-You Mail Password:<br/>
+                            <textarea name="ty" class="form-control" cols="30" rows="5" style="max-width: 40%;"></textarea><br/> Rescue Mission Data:<br/>
+                            <textarea name="mission" class="form-control" cols="30" rows="6" style="max-width: 40%;"></textarea>
+                        </p>
+                    </div>
+                </div>
+            </form>
+    </div>
+    <br /><br /><br />
+    <div class="jumbotron footer">
+        <p class="footer-text">
+            Made by Syphist using <a href="https://getbootstrap.com">Bootstrap</a> and a modified version of the <a href="https://bootswatch.com/slate/">Slate</a> theme from <a href="https://bootswatch.com">Bootswatch</a>. Hosted on <a href="https://m.do.co/c/2c12516cae8c">Digital Ocean</a>, click <a href="https://m.do.co/c/2c12516cae8c">here</a> for a referral for free credit.
+        </p>
+    </div>
+    <script>
+        var x = document.getElementById("pmd");
+          x.classList.add("active");
+          x = document.getElementById("pmdrtaok");
+          x.classList.add("active");
+    </script>
+</body>
+
+</html>
