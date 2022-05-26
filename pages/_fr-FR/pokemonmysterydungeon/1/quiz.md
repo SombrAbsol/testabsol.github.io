@@ -50,7 +50,7 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
     }
     
     function option(x){
-     return parseInt(x[x.selectedIndex].value)
+     return parseInt(x.value)
     }
     
     function questionlist(){
@@ -121,7 +121,7 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
       sorted[i]=[question,i]
      }
      sorted=sorted.sort(sortfunc)
-     document.write("<select name=\""+name+"\" onchange=\"loadques(this.form)\">\r\n")
+     document.write("<select id=\""+name+"\" onchange=\"loadques()\">\r\n")
      document.write("<option value=\"-1\">Sélectionnez une question.</option>\r\n");
      for(let i=0;i<questions.length;i++){
       document.write("<option value=\""+sorted[i][1]+"\">"
