@@ -54,7 +54,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
      return AboveGround[d]
     }
     function showitems(name){
-     document.write("<select name=\""+name+"\">");
+     document.write("<select id=\""+name+"\">");
      for(let i=0;i<items.length;i++){
       document.write("<option value=\"\">"+items[i]+" ["+i.toString(16)+"]</option>");  
      } 
@@ -62,7 +62,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     }
     
     function showpokemon(name){
-     document.write("<select name=\""+name+"\">");
+     document.write("<select id=\""+name+"\">");
      for(let i=0;i<pokemon.length;i++){
       document.write("<option value=\"\">"+pokemon[i]+"</option>");  
      } 
@@ -121,7 +121,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     }
     
     function showrewards(name){
-     document.write("<select name=\""+name+"\">");
+     document.write("<select id=\""+name+"\">");
      for(let i=0;i<items.length;i++){
       if(!isbaditem(i)){
        document.write("<option value=\""+i+"\">"+items[i]
@@ -271,15 +271,18 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     <script type="text/javascript">
         <!--
         if(debug){
-            document.write(&#039;<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos()"/><br/>&#039;)
-            document.write(&#039;<textarea id="data" cols="60" rows="5"></textarea><br/>&#039;)
-            document.write(&#039;<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos()"/><br/>&#039;)
+            document.write(&#039;<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos()"/><br>&#039;)
+            document.write(&#039;<textarea id="data" cols="60" rows="5"></textarea><br>&#039;)
+            document.write(&#039;<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos()"/><br>&#039;)
         }
         //-->
     </script>
     <input type="button" value="Générer la Lettre O.K." onclick="genaok()" />
     <br>
-    <input type="button" value="Générer la Lettre O.K. et Remerciement" onclick="genaokty()" /><br/><br/> Mot de passe de la Lettre O.K. :
+    <input type="button" value="Générer la Lettre O.K. et Remerciement" onclick="genaokty()" />
+    <br>
+    <br>
+    Mot de passe de la Lettre O.K. :
     <br>
     <textarea id="aok" cols="60" rows="5">
     </textarea>
