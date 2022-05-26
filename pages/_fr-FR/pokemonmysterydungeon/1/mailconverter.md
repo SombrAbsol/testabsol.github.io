@@ -108,7 +108,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     let baditems="EDEEEFB1E924D8D2B0DC323334C2ECF0"
     
     function option(x){
-     return parseInt(x[x.selectedIndex].value)
+     return parseInt(x.value)
     }
     
     function isbaditem(x){
