@@ -268,13 +268,13 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
     <textarea id="sos" cols="60" rows="5"></textarea>
     <br>
     <script type="text/javascript">
-        <!--
-        if(debug){
-            document.write(&#039;<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos()"/><br>&#039;)
-            document.write(&#039;<textarea id="data" cols="60" rows="5"></textarea><br>&#039;)
-            document.write(&#039;<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos()"/><br>&#039;)
-        }
-        //-->
+        /*
+            if(debug){
+                document.write(&#039;<input type="button" value="Décoder la Lettre S.O.S." onclick="decsos()"/><br>&#039;)
+                document.write(&#039;<textarea id="data" cols="60" rows="5"></textarea><br>&#039;)
+                document.write(&#039;<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos()"/><br>&#039;)
+            }
+        */
     </script>
     <input type="button" value="Générer la Lettre O.K." onclick="genaok()" />
     <br>
