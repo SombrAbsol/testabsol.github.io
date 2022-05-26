@@ -121,11 +121,11 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
         return 0
     }
     
-    function showrewards(name) {
-        document.write("<select id=\"" + name + "\" class=\"form-control\" style=\"max-width: 20%;\">");
-        for (let i = 0; i < items.length; i++) {
-            if (!isbaditem(i)) {
-                document.write("<option value=\"" + i + "\">" + items[i]
+    function showrewards(name){
+        document.write("<select id=\""+name+"\">");
+        for(let i=0;i<items.length;i++){
+            if(!isbaditem(i)){
+                document.write("<option value=\""+i+"\">"+items[i]
                     //      +" ["+i.toString(16)+"]"
                     +
                     "</option>");
@@ -133,7 +133,7 @@ Source : [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://w
         }
         document.write("</select>");
     }
-    
+
     function decodemission(pass) {
         let diffstring = "EDCBAS*"
         let client = pass[12] | (pass[13] << 8)
