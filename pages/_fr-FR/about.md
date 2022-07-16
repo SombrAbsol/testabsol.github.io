@@ -33,5 +33,5 @@ Si vous souhaitez me retrouver ailleurs, voici mes autres réseaux où vous pouv
 - GitHub : [SombrAbsol](https://github.com/SombrAbsol) <small>Là où vous pouvez retrouver tous mes projets en matière de programmation, dont [ce site Web](https://github.com/SombrAbsol/SombrAbsol.github.io)</small>
 - Crowdin : [SombrAbsol](https://crowdin.com/profile/SombrAbsol) <small>Me permet de collaborer aux traductions d'homebrews et de sites</small>
 - YouTube : [SombrAbsol The Pianist](https://www.youtube.com/channel/UCegzx2k_fVENG_Ipf61hNRQ) <small>Où je joue du synthétiseur !</small>
-- Poképédia : [SombrAbsol](https://www.pokepedia.fr/Utilisateur:SombrAbsol) <small> Une encyclopédie collaborative française sur Pokémon, comme Wikipédia
+- Poképédia : [SombrAbsol](https://www.pokepedia.fr/Utilisateur:SombrAbsol) <small>Une encyclopédie collaborative française sur Pokémon, comme Wikipédia
 - Adresse e-mail : [darkabsolpkmn@gmail.com](mailto:darkabsolpkmn@gmail.com) <small>Si jamais vous avez besoin de m'envoyer un e-mail</small>
