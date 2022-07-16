@@ -5,7 +5,7 @@ description: Convertisseur de Lettres S.O.S./O.K./Remerciement (PDM1)
 # Pokémon Donjon Mystère : Équipe de Secours Rouge et Bleue
 ## Convertisseur de Lettres S.O.S./O.K./Remerciement
 Utilisez cet outil pour générer :
-- une Lettre O.K. à partir d'une Lettre S.O.S. ;
+- une Lettre O.K. à partir d'une Lettre S.O.S.
 - une Lettre Remerciement à partir d'une Lettre S.O.S.
 - une Lettre Remerciement à partir d'une Lettre O.K.
 
