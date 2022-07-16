@@ -11,7 +11,7 @@ Je suis SombrAbsol, anciennement Pikapikamew pour le pseudo, et Benjamin pour le
 
 J'aime aussi la programmation ; je touche surtout à du Scratch, Python et HTML. Le hacking sur 3DS et les linkers sont également mon domaine.
 
-Je joue aussi du synthétiseur ! En fait, je suis un fervent admirateur des OST des jeux Sonic, en particulier les premiers. Sérieusement, le thème de la Zone IceCap (dans <i>Sonic The Hedgehog 3</i>) est la meilleure musique du monde.
+Je joue aussi du synthétiseur ! En fait, je suis un fervent admirateur des OST des jeux Sonic, en particulier les premiers. Sérieusement, le thème de la Zone IceCap (dans <i>Sonic the Hedgehog 3</i>) est la meilleure musique du monde.
 
 Je suis enfin rédacteur chez [Pokémon Trash](https://www.pokemontrash.com) depuis le 5 février 2022, et traducteur français pour de multiples homebrews et sites en avec le hacking, dont :
 * [TWiLight Menu++](https://github.com/DS-Homebrew/TWiLightMenu)
