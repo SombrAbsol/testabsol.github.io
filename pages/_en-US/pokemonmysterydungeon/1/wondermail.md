@@ -653,7 +653,7 @@ Source: [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https:/
   <script type="text/javascript">
   /*
     if(debug){
-      document.write('<input type="button" value="Encoder la Lettre Miracle" onclick="encwonder()"/><br/>')
+      document.write('<input type="button" value="Encode Wonder Mail" onclick="encwonder()"/><br/>')
     }
   */
   </script>
