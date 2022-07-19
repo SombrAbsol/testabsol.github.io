@@ -136,7 +136,7 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
      let oLeft=document.getElementById("quesleft")
      let oStatus=document.getElementById("quesstatus")
      let oResult=document.getElementById("quesresult")
-     let q=option(rad.form.queslist)
+     let q=option(rad.document.getElementById("queslist"))
      let answer=questions[q][1]+val
      let ans=answers[answer]
      let maxnature=-1
@@ -174,8 +174,8 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
      }
     }
     
-    function loadques(form){
-     let q=option(form.queslist)
+    function loadques(){
+     let q=option(document.getElementById("queslist"))
      if(q>=0){
       loadquestion(q,"quesdiv","question")
      }
