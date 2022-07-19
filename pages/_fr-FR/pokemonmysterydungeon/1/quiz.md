@@ -9,7 +9,7 @@ Utilisez cet outil pour répondre au questionnaire du début du jeu, afin de vou
 
 Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking-aid](https://web.archive.org/web/20140918064742mp_/http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking-aid)
 
-<script type="text/javascript" src="/assets/js/tools/PMD1/quiz.js">
+<script type="text/javascript" src="/assets/js/tools/PMD1/quiz-fr.js">
 </script>
 <script type="text/javascript" src="/assets/js/tools/PMD1/areas-fr.js">
 </script>
