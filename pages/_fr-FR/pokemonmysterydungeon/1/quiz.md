@@ -131,7 +131,7 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
     }
     
     function radiocheck(){
-     let val=parseInt(value)
+     let val=parseInt(document.getElementById("value"))
      let o=document.getElementById("quesdiv")
      let oLeft=document.getElementById("quesleft")
      let oStatus=document.getElementById("quesstatus")
