@@ -84,8 +84,8 @@ Source : [http://www.apointlessplace.net/wms/wmconvert.html](https://web.archive
     <textarea id="inputbox" rows="5" cols="30"></textarea> 
   </strong>
 </fieldset>                
-<input type="button" value="Convertir US/AU à EU" id="convertUSbtn" onclick="doConvert(1)">
-<input type="button" value="Convertir EU à US/AU" id="convertEUbtn" onclick="doConvert(2)">
+<input type="button" value="Convertir US/AU à EU" id="convertUSbtn" onclick="doConvert(1)" />
+<input type="button" value="Convertir EU à US/AU" id="convertEUbtn" onclick="doConvert(2)" />
 <fieldset> 
   <legend>
     <span style="font-weight: normal;">Mot de passe converti</span>
