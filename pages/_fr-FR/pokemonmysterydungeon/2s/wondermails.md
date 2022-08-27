@@ -28,7 +28,8 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
 </script>
 <script type="text/javascript" src="/assets/js/tools/PMD2S/sky_poke-fr.js">
 </script>
-<script type="text/javascript" onload="runOnLoad()">
+<body onload="runOnLoad()">
+<script type="text/javascript">
   /**
 		 * The purpose of this function is to properly initialize the generator.
 		 * It will run on load by default unless the user is using IE6.
@@ -189,3 +190,4 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
   <textarea id="outputbox" rows="3" cols="30" readonly="readonly">
   </textarea>
 </fieldset>
+</body>
