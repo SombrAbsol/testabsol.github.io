@@ -3,9 +3,9 @@ title: SOS/A-OK/Thank-You Mail Converter (PMD1)
 description: SOS/A-OK/Thank-You Mail Converter (PMD1)
 ---
 # Pokémon Mystery Dungeon: Red and Blue Rescue Team
-## Convertisseur de Lettres S.O.S./O.K./Remerciement
+## SOS/A-OK/Thank-You Mail Converter (PMD1)
 Use this tool to generate:
-- an A-OK Mail from an SOS Main
+- an A-OK Mail from an SOS Mail
 - a Thank-You Mail from an SOS Mail
 - a Thank-You Mail from an A-OK Mail
 

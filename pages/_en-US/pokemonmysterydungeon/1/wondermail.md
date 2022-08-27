@@ -11,7 +11,7 @@ Regarding special characters:
 - For the feminine symbol `♀`, use instead `%`
 - For the ellipsis `…`, use instead `.`
 
-It is quite normal that when you tell the generator that you want a Friend Area as a reward, it will be displayed as a Passmuraille when decoding the Wonder Mail.<br><br>
+It is quite normal that when you tell the generator that you want a Friend Area as a reward, it will be displayed as a Mobile Scarf when decoding the Wonder Mail.<br><br>
 Source: [http://www.upokecenter.com/games/dungeon/guides/wondermail.php](https://web.archive.org/web/20141224065334/http://www.upokecenter.com/games/dungeon/guides/wondermail.php)<br><br>
 
 <script src="/assets/js/tools/PMD1/items-en.js" type="text/javascript">
