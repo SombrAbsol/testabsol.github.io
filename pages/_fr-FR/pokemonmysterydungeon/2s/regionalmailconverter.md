@@ -76,15 +76,12 @@ Source : [http://www.apointlessplace.net/wms/wmconvert.html](https://web.archive
 		}
 </script>
 
-
 <fieldset> 
   <legend>
-    <span style="font-weight: normal;">Lettre Miracle S
-    </span>
+    <span style="font-weight: normal;">Lettre Miracle S</span>
   </legend> 
   <strong>
-    <textarea id="inputbox" rows="5" cols="30">
-    </textarea> 
+    <textarea id="inputbox" rows="5" cols="30"></textarea> 
   </strong>
 </fieldset>                
 <p>
@@ -103,9 +100,7 @@ Source : [http://www.apointlessplace.net/wms/wmconvert.html](https://web.archive
 </p>
 <fieldset> 
   <legend>
-    <span style="font-weight: normal;">Mot de passe converti
-    </span>
+    <span style="font-weight: normal;">Mot de passe converti</span>
   </legend> 
-  <textarea id="outputbox" rows="5" cols="30">
-  </textarea> 
+  <textarea id="outputbox" rows="5" cols="30"></textarea> 
 </fieldset>
