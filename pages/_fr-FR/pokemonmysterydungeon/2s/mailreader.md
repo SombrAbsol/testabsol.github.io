@@ -303,17 +303,12 @@ Source : [http://apointlessplace.net/wms/wmreader.html](https://web.archive.org/
 </script>
 
 <fieldset>
-			<legend>Lettre Miracle S
-			</legend>
-			<textarea id="inputbox" rows="5" cols="30">
-			</textarea>
+			<legend>Lettre Miracle S</legend>
+			<textarea id="inputbox" rows="5" cols="30"></textarea>
 </fieldset>
 		
-<button id="readBtn" onclick="doReadCode()">Lire le mot de passe
-</button>
+<input type="button" id="readBtn" value="Lire le mot de passe" onclick="doReadCode()" />
 <fieldset>
-			<legend>Données
-			</legend>
-			<textarea id="outputbox" rows="10" cols="30">
-			</textarea>
+			<legend>Données</legend>
+			<textarea id="outputbox" rows="10" cols="30"></textarea>
 </fieldset>

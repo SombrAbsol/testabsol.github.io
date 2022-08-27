@@ -77,10 +77,8 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
   }
   }
 </script>
-<form id="genForm">
-  <fieldset>
-    <legend>Générer un code
-    </legend>
+<fieldset>
+    <legend>Générer un mot de passe</legend>
     <p>
       <label for="missionTypeBox">Type de mission :
       </label>
@@ -177,14 +175,11 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
     <p>
       <label for="generateBtn">Générer :
       </label>
-      <button id="generateBtn" type="button" onclick="doGenerate(); return false">Générer
-      </button>
+      <input type="button" value="Générer" id="generateBtn" type="button" onclick="doGenerate(); return false" />
     </p>
-  </fieldset>
-</form>
+</fieldset>
 <fieldset>
-  <legend>Mot de passe généré
-  </legend>
+  <legend>Mot de passe généré</legend>
   <textarea id="outputbox" rows="3" cols="30" readonly="readonly">
   </textarea>
 </fieldset>
