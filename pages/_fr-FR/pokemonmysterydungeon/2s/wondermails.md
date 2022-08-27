@@ -33,47 +33,52 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
 		 * The purpose of this function is to properly initialize the generator.
 		 * It will run on load by default unless the user is using IE6.
 		 */
-  function runInitialize() {
-    WMSGen.advanced = (document.location.search.indexOf('advanced') != -1);
-    WMSGen.setup($('genForm'));
-  }
-  // Run initialize by default.
-  runOnLoad = runInitialize;
-  // This is used in wm.js.
-  function getOption(name) {
-    switch(name) {
-      default:
-        return false;
-        break;
-    }
-  }
-  // Don't allow option setting on this page.
-  function setOption(name, value) {
-    return false;
-  }
-  let generatedThisSession = false;
-  function doGenerate() {
-    // Check for errors
-    let errors = WMSGen.verify();
-    if(errors.length == 0) {
-      let code = WMSGen.generate();
-      $('outputbox').value = code;
-      // See how many people are actually using this thing...
-      if(typeof(_gaq) != 'indéfini' && !generatedThisSession && (navigator.onLine || typeof(navigator.onLine) != 'boolean')) {
-        if(typeof(_gaq.push) != 'indéfini) {
-           _gaq.push(['_trackPageview', "/wms/generator/generated"]);
-        generatedThisSession = true;
-      }
-    }
-  }
-  else {
-    let errorStr = "";
-    for(let i = 0; i < errors.length; ++i) {
-      errorStr += " * " + errors[i] + "\n";
-    }
-    $('outputbox').value = errorStr;
-  }
-  }
+		function runInitialize() {
+			WMSGen.advanced = (document.location.search.indexOf('advanced') != -1);
+			WMSGen.setup($('genForm'));
+		}
+		
+		// Run initialize by default.
+		runOnLoad = runInitialize;
+		
+		// This is used in wm.js.
+		function getOption(name) {
+			switch(name) {
+				default:
+					return false;
+				break;
+			}
+		}
+		
+		// Don't allow option setting on this page.
+		function setOption(name, value) {
+			return false;
+		}
+		
+		var generatedThisSession = false;
+		function doGenerate() {
+			// Check for errors
+			var errors = WMSGen.verify();
+			if(errors.length == 0) {
+				var code = WMSGen.generate();
+				$('outputbox').value = code;
+				
+				// See how many people are actually using this thing...
+				if(typeof(_gaq) != 'indéfini' && !generatedThisSession && (navigator.onLine || typeof(navigator.onLine) != 'boolean')) {
+					if(typeof(_gaq.push) != 'indéfini') {
+						_gaq.push(['_trackPageview', "/pokemonmysterydungeon/2s/wondermails/generator/generated"]);
+						generatedThisSession = true;
+					}
+				}
+			}
+			else {
+				var errorStr = "";
+				for(var i = 0; i < errors.length; ++i) {
+					errorStr += " * " + errors[i] + "\n";
+				}
+				$('outputbox').value = errorStr;
+			}
+		}
 </script>
 <fieldset>
     <legend>Générer un mot de passe</legend>
