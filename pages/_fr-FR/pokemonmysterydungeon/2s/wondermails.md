@@ -29,7 +29,6 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
 <script type="text/javascript" src="/assets/js/tools/PMD2S/sky_poke-fr.js">
 </script>
 <script type="text/javascript">
-window.onload = runOnLoad;
   /**
 		 * The purpose of this function is to properly initialize the generator.
 		 * It will run on load by default unless the user is using IE6.
@@ -41,6 +40,7 @@ window.onload = runOnLoad;
 		
 		// Run initialize by default.
 		runOnLoad = runInitialize;
+                window.onload = runOnLoad;
 		
 		// This is used in wm.js.
 		function getOption(name) {
