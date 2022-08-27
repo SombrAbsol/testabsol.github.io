@@ -49,7 +49,7 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
 				break;
 			}
 		}
-		
+
 		// Don't allow option setting on this page.
 		function setOption(name, value) {
 			return false;
@@ -81,7 +81,8 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
 		}
 </script>
 
-<fieldset>
+<form id="genForm">
+  <fieldset>
     <legend>Générer un mot de passe</legend>
     <p>
       <label for="missionTypeBox">Type de mission :
@@ -181,7 +182,8 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
       </label>
       <input type="button" value="Générer" id="generateBtn" type="button" onclick="doGenerate(); return false" />
     </p>
-</fieldset>
+  </fieldset>
+</form>
 <fieldset>
   <legend>Mot de passe généré</legend>
   <textarea id="outputbox" rows="3" cols="30" readonly="readonly">
