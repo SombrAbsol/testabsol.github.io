@@ -12,8 +12,7 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
 
 
 <p id="advancedMode" style="display: none">
-  <strong>Mode avancé activé
-  </strong> : vous utilisez actuellement le mode avancé. Les donjons et les clients ne génèrent pas tous des mots de passe valides. Pour le désactiver, cliquez 
+  <strong>Mode avancé activé</strong> : vous utilisez actuellement le mode avancé. Les donjons et les clients ne génèrent pas tous des mots de passe valides. Pour le désactiver, cliquez 
   <a href="https://testabsol.github.io/pokemonmysterydungeon/2s/wondermails">ici
   </a>.
 </p>
