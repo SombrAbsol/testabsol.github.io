@@ -305,7 +305,7 @@ Source : [http://apointlessplace.net/wms/wmreader.html](https://web.archive.org/
 <fieldset>
 			<legend>Lettre Miracle S
 			</legend>
-			<textarea id="inputbox" rows="4" cols="60">
+			<textarea id="inputbox" rows="5" cols="30">
 			</textarea>
 </fieldset>
 		
@@ -314,6 +314,6 @@ Source : [http://apointlessplace.net/wms/wmreader.html](https://web.archive.org/
 <fieldset>
 			<legend>Données
 			</legend>
-			<textarea id="outputbox" rows="10" cols="60">
+			<textarea id="outputbox" rows="10" cols="30">
 			</textarea>
 </fieldset>

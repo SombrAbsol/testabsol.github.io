@@ -185,6 +185,6 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
 <fieldset>
   <legend>Mot de passe généré
   </legend>
-  <textarea id="outputbox" rows="3" cols="60" readonly="readonly">
+  <textarea id="outputbox" rows="3" cols="30" readonly="readonly">
   </textarea>
 </fieldset>
