@@ -9,7 +9,7 @@ Utilisez cet outil pour répondre au questionnaire du début du jeu, afin de vou
 
 Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking-aid](https://web.archive.org/web/20140918064742mp_/http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking-aid)
 
-<script type="text/javascript" src="/assets/js/tools/PMD1/quiz.js">
+<script type="text/javascript" src="/assets/js/tools/PMD1/quiz-fr.js">
 </script>
 <script type="text/javascript" src="/assets/js/tools/PMD1/areas-fr.js">
 </script>
@@ -130,13 +130,13 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
      document.write("</select>\r\n")
     }
     
-    function radiocheck(rad){
-     let val=parseInt(rad.value)
+    function radiocheck(){
+     let val=parseInt(document.getElementById("value"))
      let o=document.getElementById("quesdiv")
      let oLeft=document.getElementById("quesleft")
      let oStatus=document.getElementById("quesstatus")
      let oResult=document.getElementById("quesresult")
-     let q=option(rad.form.queslist)
+     let q=option(document.getElementById("queslist"))
      let answer=questions[q][1]+val
      let ans=answers[answer]
      let maxnature=-1
@@ -174,8 +174,8 @@ Source : [http://www.upokecenter.com/content/pokemon-mystery-dungeon-quiz-taking
      }
     }
     
-    function loadques(form){
-     let q=option(form.queslist)
+    function loadques(){
+     let q=option(document.getElementById("queslist"))
      if(q>=0){
       loadquestion(q,"quesdiv","question")
      }
