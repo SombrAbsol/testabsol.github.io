@@ -2,6 +2,7 @@
 title: Générateur de Lettres Miracle S (PDM2C)
 description: Générateur de Lettres Miracle S (PDM2C)
 ---
+<body onload="runOnLoad()">
 # Pokémon Donjon Mystère : Explorateurs du Ciel
 ## Générateur de Lettres Miracle S
 Utilisez cet outil pour générer une Lettre Miracle S.
@@ -189,3 +190,4 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
   <textarea id="outputbox" rows="3" cols="30" readonly="readonly">
   </textarea>
 </fieldset>
+</body>
