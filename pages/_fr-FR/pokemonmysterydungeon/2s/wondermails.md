@@ -6,7 +6,7 @@ description: Générateur de Lettres Miracle S (PDM2C)
 ## Générateur de Lettres Miracle S
 Utilisez cet outil pour générer une Lettre Miracle S.
 
-Notez qu'il s'agit d'une version bêta et qu'elle le restera probablement pour toujours (en raison de certains mystères sérieux et du manque de temps pour faire des recherches). Pour cette raison, certains paramètres ne sont disponibles qu'avec le mode avancé, que vous pouvez activer [ici](https://sombrabsol.github.io/EdC/lmiracles.html?advanced=1).
+Notez qu'il s'agit d'une version bêta et qu'elle le restera probablement pour toujours (en raison de certains mystères sérieux et du manque de temps pour faire des recherches). Pour cette raison, certains paramètres ne sont disponibles qu'avec le mode avancé, que vous pouvez activer [ici](https://testabsol.github.io/pokemonmysterydungeon/2s/wondermails?advanced=1).
 
 Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.org/web/20170912231300/http://apointlessplace.net/wms/wmgenerate.html)
 
@@ -14,9 +14,22 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
 <p id="advancedMode" style="display: none">
   <strong>Mode avancé activé
   </strong> : vous utilisez actuellement le mode avancé. Les donjons et les clients ne génèrent pas tous des mots de passe valides. Pour le désactiver, cliquez 
-  <a href="https://sombrabsol.github.io/EdC/lmiracles.html">ici
+  <a href="https://testabsol.github.io/EdC/lmiracles.html">ici
   </a>.
 </p>
+
+<script type="text/javascript" src="/assets/js/tools/PMD2S/wmutils.js">
+</script>
+<script type="text/javascript" src="/assets/js/tools/PMD2S/wm.js">
+</script>
+<script type="text/javascript" src="/assets/js/tools/PMD2S/wmgenerate.js">
+</script>
+<script type="text/javascript" src="/assets/js/tools/PMD2S/sky_dungeon-fr.js">
+</script>
+<script type="text/javascript" src="/assets/js/tools/PMD2S/sky_item-fr.js">
+</script>
+<script type="text/javascript" src="/assets/js/tools/PMD2S/sky_poke-fr.js">
+</script>
 <script type="text/javascript">
   /**
 		 * The purpose of this function is to properly initialize the generator.
