@@ -76,14 +76,14 @@ Source : [http://www.apointlessplace.net/wms/wmconvert.html](https://web.archive
 		}
 </script>
 
-Entrez votre mot de passe ici :
+
 <fieldset> 
   <legend>
     <span style="font-weight: normal;">Lettre Miracle S
     </span>
   </legend> 
   <strong>
-    <textarea id="inputbox" rows="4" cols="60">
+    <textarea id="inputbox" rows="5" cols="30">
     </textarea> 
   </strong>
 </fieldset>                
@@ -106,6 +106,6 @@ Entrez votre mot de passe ici :
     <span style="font-weight: normal;">Mot de passe converti
     </span>
   </legend> 
-  <textarea id="outputbox" rows="4" cols="60">
+  <textarea id="outputbox" rows="5" cols="30">
   </textarea> 
 </fieldset>
