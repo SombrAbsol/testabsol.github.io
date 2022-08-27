@@ -2,7 +2,6 @@
 title: Générateur de Lettres Miracle S (PDM2C)
 description: Générateur de Lettres Miracle S (PDM2C)
 ---
-<body onload="runOnLoad()">
 # Pokémon Donjon Mystère : Explorateurs du Ciel
 ## Générateur de Lettres Miracle S
 Utilisez cet outil pour générer une Lettre Miracle S.
@@ -29,7 +28,7 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
 </script>
 <script type="text/javascript" src="/assets/js/tools/PMD2S/sky_poke-fr.js">
 </script>
-<script type="text/javascript">
+<script type="text/javascript" onload="runOnLoad()">
   /**
 		 * The purpose of this function is to properly initialize the generator.
 		 * It will run on load by default unless the user is using IE6.
@@ -190,4 +189,3 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
   <textarea id="outputbox" rows="3" cols="30" readonly="readonly">
   </textarea>
 </fieldset>
-</body>
