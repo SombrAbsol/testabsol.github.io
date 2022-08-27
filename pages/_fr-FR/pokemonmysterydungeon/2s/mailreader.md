@@ -5,6 +5,10 @@ description: Liseuse de Lettres Miracle S (PDM2C)
 # Pokémon Donjon Mystère : Explorateurs du Ciel
 ## Liseuse de Lettres Miracle S
 
+Utilisez cet outil pour décrypter une Lettre Miracle S à partir de son mot de passe. Fonctionne pour les mots de passe européens et américains/australiens.
+
+Source : [http://apointlessplace.net/wms/wmreader.html](https://web.archive.org/web/20170802182716/http://apointlessplace.net/wms/wmreader.html)
+
 <script type="text/javascript" src="/assets/js/tools/PMD2S/wmutils.js"></script>
 <script type="text/javascript" src="/assets/js/tools/PMD2S/wm.js"></script>
 <script type="text/javascript" src="/assets/js/tools/PMD2S/sky_dungeon-fr.js"></script>
@@ -297,10 +301,6 @@ description: Liseuse de Lettres Miracle S (PDM2C)
 			$('outputbox').value = output;
 		}
 </script>
-
-Utilisez cet outil pour décrypter une Lettre Miracle S à partir de son mot de passe. Fonctionne pour les mots de passe européens et américains/australiens.
-
-Source : [http://apointlessplace.net/wms/wmreader.html](https://web.archive.org/web/20170802182716/http://apointlessplace.net/wms/wmreader.html)
 
 <fieldset>
 			<legend>Lettre Miracle S
