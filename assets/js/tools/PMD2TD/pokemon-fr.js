@@ -240,7 +240,7 @@ var pokemon=[
 "Zarbi Z"/*226 : 00E2*/,
 "Zarbi"/*227 : 00E3*/,
 "Zarbi"/*228 : 00E4*/,
-"Qulbutok\351"/*229 : 00E5*/,
+"Qulbutoké"/*229 : 00E5*/,
 "Girafarig"/*230 : 00E6*/,
 "Pomdepik"/*231 : 00E7*/,
 "Foretress"/*232 : 00E8*/,
