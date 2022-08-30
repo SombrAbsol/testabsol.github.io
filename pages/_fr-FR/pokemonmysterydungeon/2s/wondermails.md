@@ -63,15 +63,6 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
 			if(errors.length == 0) {
 				var code = WMSGen.generate();
 				$('outputbox').value = code;
-				
-				// See how many people are actually using this thing...
-				if(typeof(_gaq) != 'indéfini' && !generatedThisSession && (navigator.onLine || typeof(navigator.onLine) != 'boolean')) {
-					if(typeof(_gaq.push) != 'indéfini') {
-						_gaq.push(['_trackPageview', "/pokemonmysterydungeon/2s/wondermails/generator/generated"]);
-						generatedThisSession = true;
-					}
-				}
-			}
 			else {
 				var errorStr = "";
 				for(var i = 0; i < errors.length; ++i) {
