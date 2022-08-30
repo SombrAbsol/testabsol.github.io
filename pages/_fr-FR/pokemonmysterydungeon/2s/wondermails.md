@@ -63,6 +63,7 @@ Source : [http://apointlessplace.net/wms/wmgenerate.html](https://web.archive.or
 			if(errors.length == 0) {
 				var code = WMSGen.generate();
 				$('outputbox').value = code;
+			}
 			else {
 				var errorStr = "";
 				for(var i = 0; i < errors.length; ++i) {
