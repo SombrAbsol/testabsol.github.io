@@ -281,7 +281,6 @@ function encsos(){
       document.write('<textarea id="data" cols="30" rows="5"></textarea>')
       <br>
       document.write('<input type="button" value="Encoder la Lettre S.O.S." onclick="encsos()"/>')
-      <br>
     }
   </script>
 <p>
