@@ -16,9 +16,9 @@ Regarding special characters:
 
 Source: [http://www.upokecenter.com/games/dungeon/guides/sosmail.php](https://web.archive.org/web/20150118004601/http://www.upokecenter.com/games/dungeon/guides/sosmail.php)<br><br>
 
-<script src="/assets/js/tools/PMD1/items-fr.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/items-en.js" type="text/javascript">
 </script>
-<script src="/assets/js/tools/PMD1/pokemon-fr.js" type="text/javascript">
+<script src="/assets/js/tools/PMD1/pokemon-en.js" type="text/javascript">
 </script>
 <script type="text/javascript">
   let PasswordTooShort="The password was invalid because it contained fewer than 54 characters. Please re-enter the password as it appears in the game and try again."
