@@ -1,0 +1,12 @@
+{
+	"by": "Por: $1",
+	"close": "Cerrar",
+	"color-scheme": "Tema:",
+	"dark": "Oscuro",
+	"default": "Defecto",
+	"light": "Claro",
+	"published-with": "Publicado con <a href=\"https://pages.github.com\">GitHub Pages</a>, ver <a href=\"https://github.com/$1\">el código fuente</a> en GitHub.",
+	"select-language": "Seleccionar idioma",
+	"source": "Código fuente",
+	"toggle-navigation": "Cambiar a navegación"
+}
