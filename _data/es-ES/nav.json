@@ -1,0 +1,24 @@
+[
+   {
+      "title": "Inicio",
+      "url": "/"
+   },
+   {
+      "title": "Herramientas",
+      "items": [
+         {
+            "title": "Mario Kart",
+            "url": "/mariokart"
+         },
+         {
+            "title": "Pokémon Mundo misterioso",
+            "url": "/pokemonmysterydungeon"
+         }
+      ]
+   },
+   {
+      "title": "Acerca de",
+      "url": "/about",
+      "key": "a"
+   }
+]
