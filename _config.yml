@@ -18,6 +18,8 @@ collections_dir: pages
 
 sass:
   sass_dir: _sass
+  
+locale_list: '["fr-FR", "de-DE", "en-US", "es-ES", "it-IT", "ja-JP", "ko-KR"]'
 
 collections:
   fr-FR:
