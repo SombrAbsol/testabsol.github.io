@@ -19,17 +19,17 @@ collections_dir: pages
 sass:
   sass_dir: _sass
   
-locale_list: '["fr-FR", "de-DE", "en-US", "es-ES", "it-IT", "ja-JP", "ko-KR"]'
+locale_list: '["en-US", "de-DE", "es-ES", "fr-FR", "it-IT", "ja-JP", "ko-KR"]'
 
 collections:
-  fr-FR:
+  en-US:
     output: true
     permalink: /:path:output_ext
   de-DE:
     output: true
-  en-US:
-    output: true
   es-ES:
+    output: true
+  fr-FR:
     output: true
   it-IT:
     output: true
