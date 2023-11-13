@@ -423,4 +423,4 @@ var pokemon = [
 	"Köder",
 	"Statue",
 	"Rayquaza (Duplikat)"
-]
+];
